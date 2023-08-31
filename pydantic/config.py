@@ -1,14 +1,12 @@
 """Configuration for Pydantic models."""
 from __future__ import annotations as _annotations
 
-import warnings
 from typing import TYPE_CHECKING, Any, Callable, Dict, Type, Union
 
 from typing_extensions import Literal, TypeAlias, TypedDict
 
 from ._migration import getattr_migration
-from .deprecated.config import BaseConfig
-from .deprecated.config import Extra
+from .deprecated.config import BaseConfig, Extra
 
 if TYPE_CHECKING:
     from ._internal._generate_schema import GenerateSchema as _GenerateSchema
