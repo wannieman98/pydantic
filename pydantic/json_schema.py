@@ -1747,6 +1747,17 @@ class GenerateJsonSchema:
         _, ref_json_schema = self.get_cache_defs_ref_schema(core_ref)
         return ref_json_schema
 
+    def precompiled_schema(self, schema: core_schema.PrecompiledSchema) -> JsonSchemaValue | None:
+        """Generates a JSON schema that matches a schema that references a precompiled schema.
+
+        Args:
+            schema: The core schema.
+
+        Returns:
+            The generated JSON schema.
+        """
+        return self.generate_inner(schema['schema'])
+
     def ser_schema(
         self, schema: core_schema.SerSchema | core_schema.IncExSeqSerSchema | core_schema.IncExDictSerSchema
     ) -> JsonSchemaValue | None:

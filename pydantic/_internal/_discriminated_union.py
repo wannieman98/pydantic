@@ -262,6 +262,8 @@ class _ApplyInferredDiscriminator:
         elif choice['type'] == 'nullable':
             self._should_be_nullable = True
             self._handle_choice(choice['schema'])  # unwrap the nullable schema
+        elif choice['type'] == 'precompiled':
+            return self._handle_choice(choice['schema'])
         elif choice['type'] == 'union':
             # Reverse the choices list before extending the stack so that they get handled in the order they occur
             choices_schemas = [v[0] if isinstance(v, tuple) else v for v in choice['choices'][::-1]]

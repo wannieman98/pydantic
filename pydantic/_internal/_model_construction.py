@@ -9,7 +9,7 @@ from functools import partial
 from types import FunctionType
 from typing import Any, Callable, Generic, Mapping
 
-from pydantic_core import PydanticUndefined, SchemaSerializer
+from pydantic_core import PydanticUndefined, SchemaSerializer, core_schema
 from typing_extensions import dataclass_transform, deprecated
 
 from ..errors import PydanticUndefinedAnnotation, PydanticUserError
@@ -495,9 +495,12 @@ def complete_model_class(
     schema = apply_discriminators(simplify_schema_references(schema))
 
     # debug(schema)
-    cls.__pydantic_core_schema__ = schema = validate_core_schema(schema)
+    schema = validate_core_schema(schema)
     cls.__pydantic_validator__ = create_schema_validator(schema, core_config, config_wrapper.plugin_settings)
     cls.__pydantic_serializer__ = SchemaSerializer(schema, core_config)
+    cls.__pydantic_core_schema__ = core_schema.precompiled_schema(
+        schema, validator=cls.__pydantic_validator__, serializer=cls.__pydantic_serializer__
+    )
     cls.__pydantic_complete__ = True
 
     # set __signature__ attr only for model class, but not for its instances
