@@ -2614,7 +2614,9 @@ def test_custom_exception_handler():
     assert len(traceback_exceptions) == 1
 
 
-def test_recursive_walk_fails_on_double_diamond_composition():
+def test_schema_building_double_diamond_composition():
+    """https://github.com/pydantic/pydantic/issues/7611"""
+
     class A(BaseModel):
         pass
 
