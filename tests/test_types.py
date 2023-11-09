@@ -1600,6 +1600,28 @@ def test_plain_enum_validate_json():
     assert m.x is MyEnum.a
 
 
+def test_plain_enum_validate_union():
+    class MyEnum(Enum):
+        a = 1
+
+    class Model(BaseModel):
+        x: int | MyEnum
+        y: MyEnum | int
+
+    m = Model(x=MyEnum.a, y=MyEnum.a)
+    assert m.x is MyEnum.a
+    assert m.y is MyEnum.a
+    m = Model(x=1, y=1)
+    assert m.x is not MyEnum.a
+    assert m.y is not MyEnum.a
+
+    assert TypeAdapter(int | MyEnum).validate_python(MyEnum.a) is MyEnum.a
+    assert TypeAdapter(MyEnum | int).validate_python(MyEnum.a) is MyEnum.a
+
+    assert TypeAdapter(int | MyEnum).validate_python(1) is not MyEnum.a
+    assert TypeAdapter(MyEnum | int).validate_python(1) is not MyEnum.a
+
+
 def test_enum_type():
     class Model(BaseModel):
         my_enum: Enum
