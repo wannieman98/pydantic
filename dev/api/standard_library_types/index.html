@@ -19,11 +19,8 @@
         <link rel="next" href="../types/">
       
       
-        
-      
-      
       <link rel="icon" href="../../favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2+insiders-4.42.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
     
     
       
@@ -31,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f2778614.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.46987102.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -59,10 +56,39 @@
     
       <link rel="stylesheet" href="../../extra/tweaks.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
 
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Standard Library Types - Pydantic" >
+      
+        <meta  property="og:description"  content="Support for common types from the Python standard library." >
+      
+        <meta  property="og:image"  content="https://docs.pydantic.dev/latest/assets/images/social/api/standard_library_types.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.pydantic.dev/latest/api/standard_library_types/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Standard Library Types - Pydantic" >
+      
+        <meta  name="twitter:description"  content="Support for common types from the Python standard library." >
+      
+        <meta  name="twitter:image"  content="https://docs.pydantic.dev/latest/assets/images/social/api/standard_library_types.png" >
+      
     
     
   </head>
@@ -96,17 +122,21 @@
             
               <button class="md-banner__button md-icon" aria-label="Don't show this again">
                 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
               </button>
             
             
   <!-- the following line is displayed in the announcement bar -->
 <!-- keep length under 164 characters (less HTML tags) to fit on 1280px desktop window -->
-<a href="https://docs.pydantic.dev/2.0/blog/pydantic-v2-final/">Pydantic V2</a> is here 🚀! Upgrading an existing app? See the <a href="https://docs.pydantic.dev/2.0/migration/">Migration Guide</a> for tips on essential changes from Pydantic V1!
+What's new &mdash; we've launched
+<a href="https://pydantic.dev/articles/logfire-announcement">Pydantic Logfire</a>
+<img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f525.svg" title=":fire:">
+to help you monitor and understand your
+<a href="https://logfire.pydantic.dev/docs/integrations/pydantic/" id="logfire-app-type" target="_blank">Pydantic validations.</a>
 
           </div>
           
-            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
           
         </aside>
       
@@ -128,7 +158,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -156,7 +186,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
       </label>
     
   
@@ -166,7 +196,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
       </label>
     
   
@@ -174,13 +204,13 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -189,21 +219,23 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -220,7 +252,7 @@
         <a href="https://github.com/pydantic/pydantic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     pydantic/pydantic
@@ -313,10 +345,27 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href="../../architecture/" class="md-tabs__link">
+        
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
     
     
       <li class="md-tabs__item">
-        <a href="../../examples/secrets/" class="md-tabs__link">
+        <a href="../../examples/files/" class="md-tabs__link">
           
   
   Examples
@@ -352,7 +401,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../integrations/mypy/" class="md-tabs__link">
+        <a href="../../integrations/logfire/" class="md-tabs__link">
           
   
   Integrations
@@ -431,7 +480,7 @@
       <a href="https://github.com/pydantic/pydantic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     pydantic/pydantic
@@ -446,34 +495,29 @@
   
   
   
-    
-    
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
     Get Started
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -482,16 +526,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Get Started
-  
-
+            Get Started
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
+  
   
   
   
@@ -500,14 +541,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Welcome to Pydantic
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -518,6 +553,7 @@
             
               
                 
+  
   
   
   
@@ -526,14 +562,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Why use Pydantic
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -544,6 +574,7 @@
             
               
                 
+  
   
   
   
@@ -552,14 +583,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Help with Pydantic
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -570,6 +595,7 @@
             
               
                 
+  
   
   
   
@@ -578,14 +604,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Installation
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -596,6 +616,7 @@
             
               
                 
+  
   
   
   
@@ -604,14 +625,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Migration Guide
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -622,6 +637,7 @@
             
               
                 
+  
   
   
   
@@ -630,14 +646,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Version Policy
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -648,6 +658,7 @@
             
               
                 
+  
   
   
   
@@ -656,14 +667,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Contributing
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -674,6 +679,7 @@
             
               
                 
+  
   
   
   
@@ -682,14 +688,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Changelog
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -710,34 +710,29 @@
   
   
   
-    
-    
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
     Concepts
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -746,11 +741,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Concepts
-  
-
+            Concepts
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -759,19 +750,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../concepts/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Models
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -782,6 +768,7 @@
             
               
                 
+  
   
   
   
@@ -790,14 +777,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Fields
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -808,6 +789,7 @@
             
               
                 
+  
   
   
   
@@ -816,14 +798,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     JSON Schema
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -834,6 +810,7 @@
             
               
                 
+  
   
   
   
@@ -842,14 +819,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     JSON
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -860,6 +831,7 @@
             
               
                 
+  
   
   
   
@@ -868,14 +840,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -886,6 +852,7 @@
             
               
                 
+  
   
   
   
@@ -894,14 +861,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Unions
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -912,6 +873,7 @@
             
               
                 
+  
   
   
   
@@ -920,14 +882,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Alias
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -938,6 +894,7 @@
             
               
                 
+  
   
   
   
@@ -946,14 +903,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Configuration
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -964,6 +915,7 @@
             
               
                 
+  
   
   
   
@@ -972,14 +924,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Serialization
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -990,6 +936,7 @@
             
               
                 
+  
   
   
   
@@ -998,14 +945,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Validators
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1016,6 +957,7 @@
             
               
                 
+  
   
   
   
@@ -1024,14 +966,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Dataclasses
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1042,6 +978,7 @@
             
               
                 
+  
   
   
   
@@ -1050,14 +987,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Postponed Annotations
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1068,6 +999,7 @@
             
               
                 
+  
   
   
   
@@ -1076,14 +1008,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Strict Mode
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1094,6 +1020,7 @@
             
               
                 
+  
   
   
   
@@ -1102,14 +1029,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Type Adapter
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1120,6 +1041,7 @@
             
               
                 
+  
   
   
   
@@ -1128,14 +1050,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Validation Decorator
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1146,6 +1062,7 @@
             
               
                 
+  
   
   
   
@@ -1154,14 +1071,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Conversion Table
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1172,6 +1083,7 @@
             
               
                 
+  
   
   
   
@@ -1180,14 +1092,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Settings Management
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1198,6 +1104,7 @@
             
               
                 
+  
   
   
   
@@ -1206,14 +1113,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Performance
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1227,19 +1128,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../concepts/plugins/" class="md-nav__link">
+      <a href="../../concepts/experimental/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Pydantic Plugins
-  
-
-    
+    Experimental
   </span>
-  
   
 
       </a>
@@ -1262,17 +1158,21 @@
     
   
   
-    
-    
+  
     
     
     
       
+        
+        
       
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
@@ -1282,14 +1182,8 @@
             
   
   <span class="md-ellipsis">
-    
-  
     API Documentation
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1298,11 +1192,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    API Documentation
-  
-
+            API Documentation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1313,31 +1203,32 @@
     
   
   
+  
     
     
     
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
       
         
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    
-  
     Pydantic
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1346,11 +1237,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Pydantic
-  
-
+            Pydantic
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1359,19 +1246,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../base_model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     BaseModel
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1382,6 +1264,7 @@
             
               
                 
+  
   
   
   
@@ -1390,14 +1273,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     RootModel
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1408,6 +1285,7 @@
             
               
                 
+  
   
   
   
@@ -1416,14 +1294,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Dataclasses
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1434,6 +1306,7 @@
             
               
                 
+  
   
   
   
@@ -1442,14 +1315,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     TypeAdapter
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1460,6 +1327,7 @@
             
               
                 
+  
   
   
   
@@ -1468,14 +1336,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Validate Call
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1486,6 +1348,7 @@
             
               
                 
+  
   
   
   
@@ -1494,14 +1357,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Fields
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1512,6 +1369,7 @@
             
               
                 
+  
   
   
   
@@ -1520,14 +1378,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Aliases
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1538,6 +1390,7 @@
             
               
                 
+  
   
   
   
@@ -1546,14 +1399,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Configuration
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1564,6 +1411,7 @@
             
               
                 
+  
   
   
   
@@ -1572,14 +1420,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     JSON Schema
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1590,6 +1432,7 @@
             
               
                 
+  
   
   
   
@@ -1598,14 +1441,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Errors
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1616,6 +1453,7 @@
             
               
                 
+  
   
   
   
@@ -1624,14 +1462,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Functional Validators
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1642,6 +1474,7 @@
             
               
                 
+  
   
   
   
@@ -1650,14 +1483,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Functional Serializers
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1671,6 +1498,7 @@
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -1683,14 +1511,8 @@
           
   
   <span class="md-ellipsis">
-    
-  
     Standard Library Types
-  
-
-    
   </span>
-  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1700,14 +1522,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Standard Library Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1730,9 +1546,7 @@
         <li class="md-nav__item">
   <a href="#booleans" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Booleans
-      
+      Booleans
     </span>
   </a>
   
@@ -1741,9 +1555,7 @@
         <li class="md-nav__item">
   <a href="#datetime-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Datetime Types
-      
+      Datetime Types
     </span>
   </a>
   
@@ -1753,9 +1565,7 @@
           <li class="md-nav__item">
   <a href="#datetimedatetime" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.datetime
-      
+      datetime.datetime
     </span>
   </a>
   
@@ -1764,9 +1574,7 @@
           <li class="md-nav__item">
   <a href="#datetimedate" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.date
-      
+      datetime.date
     </span>
   </a>
   
@@ -1775,9 +1583,7 @@
           <li class="md-nav__item">
   <a href="#datetimetime" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.time
-      
+      datetime.time
     </span>
   </a>
   
@@ -1786,9 +1592,7 @@
           <li class="md-nav__item">
   <a href="#datetimetimedelta" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.timedelta
-      
+      datetime.timedelta
     </span>
   </a>
   
@@ -1802,9 +1606,7 @@
         <li class="md-nav__item">
   <a href="#number-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Number Types
-      
+      Number Types
     </span>
   </a>
   
@@ -1814,9 +1616,7 @@
           <li class="md-nav__item">
   <a href="#int" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        int
-      
+      int
     </span>
   </a>
   
@@ -1825,9 +1625,7 @@
           <li class="md-nav__item">
   <a href="#float" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        float
-      
+      float
     </span>
   </a>
   
@@ -1836,9 +1634,7 @@
           <li class="md-nav__item">
   <a href="#enumintenum" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        enum.IntEnum
-      
+      enum.IntEnum
     </span>
   </a>
   
@@ -1847,9 +1643,25 @@
           <li class="md-nav__item">
   <a href="#decimaldecimal" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        decimal.Decimal
-      
+      decimal.Decimal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex" class="md-nav__link">
+    <span class="md-ellipsis">
+      complex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fractionsfraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      fractions.Fraction
     </span>
   </a>
   
@@ -1863,9 +1675,7 @@
         <li class="md-nav__item">
   <a href="#enum" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Enum
-      
+      Enum
     </span>
   </a>
   
@@ -1874,9 +1684,7 @@
         <li class="md-nav__item">
   <a href="#lists-and-tuples" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Lists and Tuples
-      
+      Lists and Tuples
     </span>
   </a>
   
@@ -1886,9 +1694,7 @@
           <li class="md-nav__item">
   <a href="#list" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        list
-      
+      list
     </span>
   </a>
   
@@ -1897,9 +1703,7 @@
           <li class="md-nav__item">
   <a href="#typinglist" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.List
-      
+      typing.List
     </span>
   </a>
   
@@ -1908,9 +1712,7 @@
           <li class="md-nav__item">
   <a href="#tuple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        tuple
-      
+      tuple
     </span>
   </a>
   
@@ -1919,9 +1721,7 @@
           <li class="md-nav__item">
   <a href="#typingtuple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Tuple
-      
+      typing.Tuple
     </span>
   </a>
   
@@ -1930,9 +1730,7 @@
           <li class="md-nav__item">
   <a href="#typingnamedtuple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.NamedTuple
-      
+      typing.NamedTuple
     </span>
   </a>
   
@@ -1946,9 +1744,7 @@
         <li class="md-nav__item">
   <a href="#deque" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Deque
-      
+      Deque
     </span>
   </a>
   
@@ -1958,9 +1754,7 @@
           <li class="md-nav__item">
   <a href="#deque_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        deque
-      
+      deque
     </span>
   </a>
   
@@ -1969,9 +1763,7 @@
           <li class="md-nav__item">
   <a href="#typingdeque" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Deque
-      
+      typing.Deque
     </span>
   </a>
   
@@ -1985,9 +1777,7 @@
         <li class="md-nav__item">
   <a href="#sets" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Sets
-      
+      Sets
     </span>
   </a>
   
@@ -1997,9 +1787,7 @@
           <li class="md-nav__item">
   <a href="#set" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        set
-      
+      set
     </span>
   </a>
   
@@ -2008,9 +1796,7 @@
           <li class="md-nav__item">
   <a href="#typingset" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Set
-      
+      typing.Set
     </span>
   </a>
   
@@ -2019,9 +1805,7 @@
           <li class="md-nav__item">
   <a href="#frozenset" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        frozenset
-      
+      frozenset
     </span>
   </a>
   
@@ -2030,9 +1814,7 @@
           <li class="md-nav__item">
   <a href="#typingfrozenset" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.FrozenSet
-      
+      typing.FrozenSet
     </span>
   </a>
   
@@ -2046,9 +1828,7 @@
         <li class="md-nav__item">
   <a href="#other-iterables" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Other Iterables
-      
+      Other Iterables
     </span>
   </a>
   
@@ -2058,9 +1838,7 @@
           <li class="md-nav__item">
   <a href="#typingsequence" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Sequence
-      
+      typing.Sequence
     </span>
   </a>
   
@@ -2069,9 +1847,7 @@
           <li class="md-nav__item">
   <a href="#typingiterable" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Iterable
-      
+      typing.Iterable
     </span>
   </a>
   
@@ -2080,9 +1856,7 @@
           <li class="md-nav__item">
   <a href="#infinite-generators" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Infinite Generators
-      
+      Infinite Generators
     </span>
   </a>
   
@@ -2096,9 +1870,7 @@
         <li class="md-nav__item">
   <a href="#mapping-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Mapping Types
-      
+      Mapping Types
     </span>
   </a>
   
@@ -2108,9 +1880,7 @@
           <li class="md-nav__item">
   <a href="#dict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        dict
-      
+      dict
     </span>
   </a>
   
@@ -2119,9 +1889,7 @@
           <li class="md-nav__item">
   <a href="#typingdict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Dict
-      
+      typing.Dict
     </span>
   </a>
   
@@ -2130,9 +1898,7 @@
           <li class="md-nav__item">
   <a href="#typeddict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        TypedDict
-      
+      TypedDict
     </span>
   </a>
   
@@ -2146,9 +1912,7 @@
         <li class="md-nav__item">
   <a href="#callable" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Callable
-      
+      Callable
     </span>
   </a>
   
@@ -2157,9 +1921,7 @@
         <li class="md-nav__item">
   <a href="#ip-address-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        IP Address Types
-      
+      IP Address Types
     </span>
   </a>
   
@@ -2168,9 +1930,7 @@
         <li class="md-nav__item">
   <a href="#uuid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        UUID
-      
+      UUID
     </span>
   </a>
   
@@ -2179,9 +1939,7 @@
         <li class="md-nav__item">
   <a href="#union" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Union
-      
+      Union
     </span>
   </a>
   
@@ -2190,9 +1948,7 @@
         <li class="md-nav__item">
   <a href="#type-and-typevar" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Type and TypeVar
-      
+      Type and TypeVar
     </span>
   </a>
   
@@ -2202,9 +1958,7 @@
           <li class="md-nav__item">
   <a href="#type" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        type
-      
+      type
     </span>
   </a>
   
@@ -2213,9 +1967,7 @@
           <li class="md-nav__item">
   <a href="#typingtype" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Type
-      
+      typing.Type
     </span>
   </a>
   
@@ -2224,9 +1976,7 @@
           <li class="md-nav__item">
   <a href="#typingtypevar" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.TypeVar
-      
+      typing.TypeVar
     </span>
   </a>
   
@@ -2240,9 +1990,7 @@
         <li class="md-nav__item">
   <a href="#none-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        None Types
-      
+      None Types
     </span>
   </a>
   
@@ -2251,9 +1999,7 @@
         <li class="md-nav__item">
   <a href="#strings" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Strings
-      
+      Strings
     </span>
   </a>
   
@@ -2262,9 +2008,7 @@
         <li class="md-nav__item">
   <a href="#bytes" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Bytes
-      
+      Bytes
     </span>
   </a>
   
@@ -2273,9 +2017,7 @@
         <li class="md-nav__item">
   <a href="#typingliteral" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Literal
-      
+      typing.Literal
     </span>
   </a>
   
@@ -2284,9 +2026,16 @@
         <li class="md-nav__item">
   <a href="#typingany" class="md-nav__link">
     <span class="md-ellipsis">
+      typing.Any
+    </span>
+  </a>
+  
+</li>
       
-        typing.Any
-      
+        <li class="md-nav__item">
+  <a href="#typinghashable" class="md-nav__link">
+    <span class="md-ellipsis">
+      typing.Hashable
     </span>
   </a>
   
@@ -2295,9 +2044,7 @@
         <li class="md-nav__item">
   <a href="#typingannotated" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Annotated
-      
+      typing.Annotated
     </span>
   </a>
   
@@ -2306,9 +2053,7 @@
         <li class="md-nav__item">
   <a href="#typingpattern" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Pattern
-      
+      typing.Pattern
     </span>
   </a>
   
@@ -2317,9 +2062,7 @@
         <li class="md-nav__item">
   <a href="#pathlibpath" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        pathlib.Path
-      
+      pathlib.Path
     </span>
   </a>
   
@@ -2339,19 +2082,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2362,6 +2100,7 @@
             
               
                 
+  
   
   
   
@@ -2370,14 +2109,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Network Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2388,6 +2121,7 @@
             
               
                 
+  
   
   
   
@@ -2396,14 +2130,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Version Information
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2415,31 +2143,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../plugin/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Pydantic Plugins
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2448,14 +2151,29 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Annotated Handlers
-  
-
-    
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experimental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Experimental
+  </span>
   
 
       </a>
@@ -2477,31 +2195,32 @@
   
   
   
+  
     
     
     
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
+      
       
         
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Core
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2510,16 +2229,13 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Pydantic Core
-  
-
+            Pydantic Core
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
+  
   
   
   
@@ -2528,14 +2244,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     pydantic_core
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2546,6 +2256,7 @@
             
               
                 
+  
   
   
   
@@ -2554,14 +2265,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     pydantic_core.core_schema
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2580,6 +2285,7 @@
             
               
                 
+  
   
   
   
@@ -2588,14 +2294,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Settings
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2609,31 +2309,32 @@
   
   
   
+  
     
     
     
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
+      
       
         
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Extra Types
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2642,16 +2343,13 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Pydantic Extra Types
-  
-
+            Pydantic Extra Types
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
+  
   
   
   
@@ -2660,14 +2358,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Color
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2678,6 +2370,7 @@
             
               
                 
+  
   
   
   
@@ -2686,14 +2379,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Country
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2704,6 +2391,7 @@
             
               
                 
+  
   
   
   
@@ -2712,14 +2400,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Payment
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2730,6 +2412,7 @@
             
               
                 
+  
   
   
   
@@ -2738,14 +2421,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Phone Numbers
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2756,6 +2433,7 @@
             
               
                 
+  
   
   
   
@@ -2764,14 +2442,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Routing Numbers
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2782,6 +2454,7 @@
             
               
                 
+  
   
   
   
@@ -2790,14 +2463,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Coordinate
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2808,6 +2475,7 @@
             
               
                 
+  
   
   
   
@@ -2816,14 +2484,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Mac Address
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2834,6 +2496,7 @@
             
               
                 
+  
   
   
   
@@ -2842,14 +2505,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     ISBN
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2857,92 +2514,157 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    
-  
-    Examples
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Examples
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../examples/secrets/" class="md-nav__link">
+      <a href="../pydantic_extra_types_pendulum_dt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Secrets
-  
-
-    
+    Pendulum
   </span>
-  
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydantic_extra_types_currency_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Currency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydantic_extra_types_language_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydantic_extra_types_script_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Script Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydantic_extra_types_semantic_version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semantic Version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydantic_extra_types_timezone_name/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timezone Name
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydantic_extra_types_ulid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ULID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2960,34 +2682,49 @@
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
     
-    
+      
+      
+  
+  
+  
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
-    Error Messages
-  
-
-    
+    Examples
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2996,11 +2733,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Error Messages
-  
-
+            Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3009,19 +2742,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../errors/errors/" class="md-nav__link">
+      <a href="../../examples/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Error Handling
-  
-
-    
+    Validating File Data
   </span>
-  
   
 
       </a>
@@ -3035,19 +2763,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../errors/validation_errors/" class="md-nav__link">
+      <a href="../../examples/requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Validation Errors
-  
-
-    
+    Web and API Requests
   </span>
-  
   
 
       </a>
@@ -3061,19 +2784,56 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../errors/usage_errors/" class="md-nav__link">
+      <a href="../../examples/queues/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Usage Errors
-  
-
-    
+    Queues
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/orms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/custom_validators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Validators
+  </span>
   
 
       </a>
@@ -3094,34 +2854,29 @@
   
   
   
-    
-    
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
-    Integrations
-  
-
-    
+    Error Messages
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -3130,11 +2885,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Integrations
-  
-
+            Error Messages
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3143,19 +2894,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../integrations/mypy/" class="md-nav__link">
+      <a href="../../errors/errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Mypy
-  
-
-    
+    Error Handling
   </span>
-  
   
 
       </a>
@@ -3169,19 +2915,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../integrations/pycharm/" class="md-nav__link">
+      <a href="../../errors/validation_errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    PyCharm
-  
-
-    
+    Validation Errors
   </span>
-  
   
 
       </a>
@@ -3195,123 +2936,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../integrations/hypothesis/" class="md-nav__link">
+      <a href="../../errors/usage_errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Hypothesis
-  
-
-    
+    Usage Errors
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/visual_studio_code/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Visual Studio Code
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/datamodel_code_generator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    datamodel-code-generator
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/devtools/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    devtools
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/rich/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Rich
-  
-
-    
-  </span>
-  
   
 
       </a>
@@ -3332,19 +2964,367 @@
   
   
   
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/logfire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pydantic Logfire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dev Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Dev Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/mypy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mypy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/pycharm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PyCharm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/hypothesis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypothesis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/visual_studio_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Studio Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/datamodel_code_generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    datamodel-code-generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/devtools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    devtools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/rich/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/linting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Production Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Production Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/aws_lambda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Lambda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="https://blog.pydantic.dev/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Blog
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -3357,19 +3337,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../pydantic_people/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic People
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -3406,9 +3381,7 @@
         <li class="md-nav__item">
   <a href="#booleans" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Booleans
-      
+      Booleans
     </span>
   </a>
   
@@ -3417,9 +3390,7 @@
         <li class="md-nav__item">
   <a href="#datetime-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Datetime Types
-      
+      Datetime Types
     </span>
   </a>
   
@@ -3429,9 +3400,7 @@
           <li class="md-nav__item">
   <a href="#datetimedatetime" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.datetime
-      
+      datetime.datetime
     </span>
   </a>
   
@@ -3440,9 +3409,7 @@
           <li class="md-nav__item">
   <a href="#datetimedate" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.date
-      
+      datetime.date
     </span>
   </a>
   
@@ -3451,9 +3418,7 @@
           <li class="md-nav__item">
   <a href="#datetimetime" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.time
-      
+      datetime.time
     </span>
   </a>
   
@@ -3462,9 +3427,7 @@
           <li class="md-nav__item">
   <a href="#datetimetimedelta" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        datetime.timedelta
-      
+      datetime.timedelta
     </span>
   </a>
   
@@ -3478,9 +3441,7 @@
         <li class="md-nav__item">
   <a href="#number-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Number Types
-      
+      Number Types
     </span>
   </a>
   
@@ -3490,9 +3451,7 @@
           <li class="md-nav__item">
   <a href="#int" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        int
-      
+      int
     </span>
   </a>
   
@@ -3501,9 +3460,7 @@
           <li class="md-nav__item">
   <a href="#float" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        float
-      
+      float
     </span>
   </a>
   
@@ -3512,9 +3469,7 @@
           <li class="md-nav__item">
   <a href="#enumintenum" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        enum.IntEnum
-      
+      enum.IntEnum
     </span>
   </a>
   
@@ -3523,9 +3478,25 @@
           <li class="md-nav__item">
   <a href="#decimaldecimal" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        decimal.Decimal
-      
+      decimal.Decimal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex" class="md-nav__link">
+    <span class="md-ellipsis">
+      complex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fractionsfraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      fractions.Fraction
     </span>
   </a>
   
@@ -3539,9 +3510,7 @@
         <li class="md-nav__item">
   <a href="#enum" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Enum
-      
+      Enum
     </span>
   </a>
   
@@ -3550,9 +3519,7 @@
         <li class="md-nav__item">
   <a href="#lists-and-tuples" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Lists and Tuples
-      
+      Lists and Tuples
     </span>
   </a>
   
@@ -3562,9 +3529,7 @@
           <li class="md-nav__item">
   <a href="#list" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        list
-      
+      list
     </span>
   </a>
   
@@ -3573,9 +3538,7 @@
           <li class="md-nav__item">
   <a href="#typinglist" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.List
-      
+      typing.List
     </span>
   </a>
   
@@ -3584,9 +3547,7 @@
           <li class="md-nav__item">
   <a href="#tuple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        tuple
-      
+      tuple
     </span>
   </a>
   
@@ -3595,9 +3556,7 @@
           <li class="md-nav__item">
   <a href="#typingtuple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Tuple
-      
+      typing.Tuple
     </span>
   </a>
   
@@ -3606,9 +3565,7 @@
           <li class="md-nav__item">
   <a href="#typingnamedtuple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.NamedTuple
-      
+      typing.NamedTuple
     </span>
   </a>
   
@@ -3622,9 +3579,7 @@
         <li class="md-nav__item">
   <a href="#deque" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Deque
-      
+      Deque
     </span>
   </a>
   
@@ -3634,9 +3589,7 @@
           <li class="md-nav__item">
   <a href="#deque_1" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        deque
-      
+      deque
     </span>
   </a>
   
@@ -3645,9 +3598,7 @@
           <li class="md-nav__item">
   <a href="#typingdeque" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Deque
-      
+      typing.Deque
     </span>
   </a>
   
@@ -3661,9 +3612,7 @@
         <li class="md-nav__item">
   <a href="#sets" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Sets
-      
+      Sets
     </span>
   </a>
   
@@ -3673,9 +3622,7 @@
           <li class="md-nav__item">
   <a href="#set" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        set
-      
+      set
     </span>
   </a>
   
@@ -3684,9 +3631,7 @@
           <li class="md-nav__item">
   <a href="#typingset" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Set
-      
+      typing.Set
     </span>
   </a>
   
@@ -3695,9 +3640,7 @@
           <li class="md-nav__item">
   <a href="#frozenset" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        frozenset
-      
+      frozenset
     </span>
   </a>
   
@@ -3706,9 +3649,7 @@
           <li class="md-nav__item">
   <a href="#typingfrozenset" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.FrozenSet
-      
+      typing.FrozenSet
     </span>
   </a>
   
@@ -3722,9 +3663,7 @@
         <li class="md-nav__item">
   <a href="#other-iterables" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Other Iterables
-      
+      Other Iterables
     </span>
   </a>
   
@@ -3734,9 +3673,7 @@
           <li class="md-nav__item">
   <a href="#typingsequence" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Sequence
-      
+      typing.Sequence
     </span>
   </a>
   
@@ -3745,9 +3682,7 @@
           <li class="md-nav__item">
   <a href="#typingiterable" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Iterable
-      
+      typing.Iterable
     </span>
   </a>
   
@@ -3756,9 +3691,7 @@
           <li class="md-nav__item">
   <a href="#infinite-generators" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Infinite Generators
-      
+      Infinite Generators
     </span>
   </a>
   
@@ -3772,9 +3705,7 @@
         <li class="md-nav__item">
   <a href="#mapping-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Mapping Types
-      
+      Mapping Types
     </span>
   </a>
   
@@ -3784,9 +3715,7 @@
           <li class="md-nav__item">
   <a href="#dict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        dict
-      
+      dict
     </span>
   </a>
   
@@ -3795,9 +3724,7 @@
           <li class="md-nav__item">
   <a href="#typingdict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Dict
-      
+      typing.Dict
     </span>
   </a>
   
@@ -3806,9 +3733,7 @@
           <li class="md-nav__item">
   <a href="#typeddict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        TypedDict
-      
+      TypedDict
     </span>
   </a>
   
@@ -3822,9 +3747,7 @@
         <li class="md-nav__item">
   <a href="#callable" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Callable
-      
+      Callable
     </span>
   </a>
   
@@ -3833,9 +3756,7 @@
         <li class="md-nav__item">
   <a href="#ip-address-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        IP Address Types
-      
+      IP Address Types
     </span>
   </a>
   
@@ -3844,9 +3765,7 @@
         <li class="md-nav__item">
   <a href="#uuid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        UUID
-      
+      UUID
     </span>
   </a>
   
@@ -3855,9 +3774,7 @@
         <li class="md-nav__item">
   <a href="#union" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Union
-      
+      Union
     </span>
   </a>
   
@@ -3866,9 +3783,7 @@
         <li class="md-nav__item">
   <a href="#type-and-typevar" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Type and TypeVar
-      
+      Type and TypeVar
     </span>
   </a>
   
@@ -3878,9 +3793,7 @@
           <li class="md-nav__item">
   <a href="#type" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        type
-      
+      type
     </span>
   </a>
   
@@ -3889,9 +3802,7 @@
           <li class="md-nav__item">
   <a href="#typingtype" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Type
-      
+      typing.Type
     </span>
   </a>
   
@@ -3900,9 +3811,7 @@
           <li class="md-nav__item">
   <a href="#typingtypevar" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.TypeVar
-      
+      typing.TypeVar
     </span>
   </a>
   
@@ -3916,9 +3825,7 @@
         <li class="md-nav__item">
   <a href="#none-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        None Types
-      
+      None Types
     </span>
   </a>
   
@@ -3927,9 +3834,7 @@
         <li class="md-nav__item">
   <a href="#strings" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Strings
-      
+      Strings
     </span>
   </a>
   
@@ -3938,9 +3843,7 @@
         <li class="md-nav__item">
   <a href="#bytes" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Bytes
-      
+      Bytes
     </span>
   </a>
   
@@ -3949,9 +3852,7 @@
         <li class="md-nav__item">
   <a href="#typingliteral" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Literal
-      
+      typing.Literal
     </span>
   </a>
   
@@ -3960,9 +3861,16 @@
         <li class="md-nav__item">
   <a href="#typingany" class="md-nav__link">
     <span class="md-ellipsis">
+      typing.Any
+    </span>
+  </a>
+  
+</li>
       
-        typing.Any
-      
+        <li class="md-nav__item">
+  <a href="#typinghashable" class="md-nav__link">
+    <span class="md-ellipsis">
+      typing.Hashable
     </span>
   </a>
   
@@ -3971,9 +3879,7 @@
         <li class="md-nav__item">
   <a href="#typingannotated" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Annotated
-      
+      typing.Annotated
     </span>
   </a>
   
@@ -3982,9 +3888,7 @@
         <li class="md-nav__item">
   <a href="#typingpattern" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        typing.Pattern
-      
+      typing.Pattern
     </span>
   </a>
   
@@ -3993,9 +3897,7 @@
         <li class="md-nav__item">
   <a href="#pathlibpath" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        pathlib.Path
-      
+      pathlib.Path
     </span>
   </a>
   
@@ -4011,7 +3913,6 @@
           
           
             <div class="md-content" data-md-component="content">
-              
               <article class="md-content__inner md-typeset">
                 
   
@@ -4066,7 +3967,7 @@ use <a href="../types/#pydantic.types.StrictBool"><code>StrictBool</code></a>.</
 <h2 id="datetime-types">Datetime Types<a class="headerlink" href="#datetime-types" title="Permanent link">&para;</a></h2>
 <p>Pydantic supports the following <a href="https://docs.python.org/library/datetime.html#available-types">datetime</a>
 types:</p>
-<h3 id="datetimedatetime"><code>datetime.datetime</code><a class="headerlink" href="#datetimedatetime" title="Permanent link">&para;</a></h3>
+<h3 id="datetimedatetime"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime"><code>datetime.datetime</code></a><a class="headerlink" href="#datetimedatetime" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><code>datetime</code> fields will accept values of type:</p>
@@ -4076,9 +3977,11 @@ types:</p>
   (if &lt; <code>-2e10</code>or &gt; <code>2e10</code>) since 1 January 1970</li>
 <li><code>str</code>; the following formats are accepted:<ul>
 <li><code>YYYY-MM-DD[T]HH:MM[:SS[.ffffff]][Z or [±]HH[:]MM]</code></li>
+<li><code>YYYY-MM-DD</code> is accepted in lax mode, but not in strict mode</li>
 <li><code>int</code> or <code>float</code> as a string (assumed as Unix time)</li>
 </ul>
 </li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#datetime.date"><code>datetime.date</code></a> instances are accepted in lax mode, but not in strict mode</li>
 </ul>
 </li>
 </ul>
@@ -4098,7 +4001,7 @@ types:</p>
 <span class="sd">{&#39;dt&#39;: datetime.datetime(2032, 4, 23, 10, 20, 30, 400000, tzinfo=TzInfo(+02:30))}</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div>
-<h3 id="datetimedate"><code>datetime.date</code><a class="headerlink" href="#datetimedate" title="Permanent link">&para;</a></h3>
+<h3 id="datetimedate"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#datetime.date"><code>datetime.date</code></a><a class="headerlink" href="#datetimedate" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><code>date</code> fields will accept values of type:</p>
@@ -4127,7 +4030,7 @@ types:</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_birthday</span><span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 <span class="c1">#&gt; {&#39;d&#39;: datetime.date(2023, 3, 24)}</span>
 </code></pre></div>
-<h3 id="datetimetime"><code>datetime.time</code><a class="headerlink" href="#datetimetime" title="Permanent link">&para;</a></h3>
+<h3 id="datetimetime"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#datetime.time"><code>datetime.time</code></a><a class="headerlink" href="#datetimetime" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><code>time</code> fields will accept values of type:</p>
@@ -4154,7 +4057,7 @@ types:</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 <span class="c1">#&gt; {&#39;t&#39;: datetime.time(4, 8, 16)}</span>
 </code></pre></div>
-<h3 id="datetimetimedelta"><code>datetime.timedelta</code><a class="headerlink" href="#datetimetimedelta" title="Permanent link">&para;</a></h3>
+<h3 id="datetimetimedelta"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta"><code>datetime.timedelta</code></a><a class="headerlink" href="#datetimetimedelta" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><code>timedelta</code> fields will accept values of type:</p>
@@ -4188,25 +4091,25 @@ types:</p>
 </code></pre></div>
 <h2 id="number-types">Number Types<a class="headerlink" href="#number-types" title="Permanent link">&para;</a></h2>
 <p>Pydantic supports the following numeric types from the Python standard library:</p>
-<h3 id="int"><code>int</code><a class="headerlink" href="#int" title="Permanent link">&para;</a></h3>
+<h3 id="int"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a><a class="headerlink" href="#int" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Pydantic uses <code>int(v)</code> to coerce types to an <code>int</code>;
   see <a href="../../concepts/models/#data-conversion">Data conversion</a> for details on loss of information during data conversion.</li>
 </ul>
-<h3 id="float"><code>float</code><a class="headerlink" href="#float" title="Permanent link">&para;</a></h3>
+<h3 id="float"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float"><code>float</code></a><a class="headerlink" href="#float" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Pydantic uses <code>float(v)</code> to coerce values to floats.</li>
 </ul>
-<h3 id="enumintenum"><code>enum.IntEnum</code><a class="headerlink" href="#enumintenum" title="Permanent link">&para;</a></h3>
+<h3 id="enumintenum"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum"><code>enum.IntEnum</code></a><a class="headerlink" href="#enumintenum" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Validation: Pydantic checks that the value is a valid <code>IntEnum</code> instance.</li>
 <li>Validation for subclass of <code>enum.IntEnum</code>: checks that the value is a valid member of the integer enum;
   see <a href="#enum">Enums and Choices</a> for more details.</li>
 </ul>
-<h3 id="decimaldecimal"><code>decimal.Decimal</code><a class="headerlink" href="#decimaldecimal" title="Permanent link">&para;</a></h3>
+<h3 id="decimaldecimal"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/decimal.html#decimal.Decimal"><code>decimal.Decimal</code></a><a class="headerlink" href="#decimaldecimal" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Validation: Pydantic attempts to convert the value to a string, then passes the string to <code>Decimal(v)</code>.</li>
-<li>Serialization: Pydantic serializes <code>Decimal</code> types as strings.
+<li>Serialization: Pydantic serializes <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/decimal.html#decimal.Decimal"><code>Decimal</code></a> types as strings.
 You can use a custom serializer to override this behavior if desired. For example:</li>
 </ul>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">decimal</span> <span class="kn">import</span> <span class="n">Decimal</span>
@@ -4240,8 +4143,18 @@ You can use a custom serializer to override this behavior if desired. For exampl
 <li>Using <a class="autorefs autorefs-internal" href="../base_model/#pydantic.BaseModel.model_dump"><code>model_dump</code></a> with <code>mode='json'</code>, <code>x</code> is serialized as a <code>string</code>, and <code>y</code> is serialized as a <code>float</code> because of the custom serializer applied.</li>
 <li>Using <a class="autorefs autorefs-internal" href="../base_model/#pydantic.BaseModel.model_dump_json"><code>model_dump_json</code></a>, <code>x</code> is serialized as a <code>string</code>, and <code>y</code> is serialized as a <code>float</code> because of the custom serializer applied.</li>
 </ol>
-<h2 id="enum"><code>Enum</code><a class="headerlink" href="#enum" title="Permanent link">&para;</a></h2>
-<p>Pydantic uses Python's standard <code>enum</code> classes to define choices.</p>
+<h3 id="complex"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#complex"><code>complex</code></a><a class="headerlink" href="#complex" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Validation: Pydantic supports <code>complex</code> types or <code>str</code> values that can be converted to a <code>complex</code> type.</li>
+<li>Serialization: Pydantic serializes <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#complex"><code>complex</code></a> types as strings.</li>
+</ul>
+<h3 id="fractionsfraction"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/fractions.html#fractions.Fraction"><code>fractions.Fraction</code></a><a class="headerlink" href="#fractionsfraction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Validation: Pydantic attempts to convert the value to a <code>Fraction</code> using <code>Fraction(v)</code>.</li>
+<li>Serialization: Pydantic serializes <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/fractions.html#fractions.Fraction"><code>Fraction</code></a> types as strings.</li>
+</ul>
+<h2 id="enum"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/enum.html#enum.Enum"><code>Enum</code></a><a class="headerlink" href="#enum" title="Permanent link">&para;</a></h2>
+<p>Pydantic uses Python's standard <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/enum.html#module-enum"><code>enum</code></a> classes to define choices.</p>
 <p><code>enum.Enum</code> checks that the value is a valid <code>Enum</code> instance.
 Subclass of <code>enum.Enum</code> checks that the value is a valid member of the enum.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span><span class="p">,</span> <span class="n">IntEnum</span>
@@ -4279,10 +4192,10 @@ Subclass of <code>enum.Enum</code> checks that the value is a valid member of th
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
 <h2 id="lists-and-tuples">Lists and Tuples<a class="headerlink" href="#lists-and-tuples" title="Permanent link">&para;</a></h2>
-<h3 id="list"><code>list</code><a class="headerlink" href="#list" title="Permanent link">&para;</a></h3>
-<p>Allows <code>list</code>, <code>tuple</code>, <code>set</code>, <code>frozenset</code>, <code>deque</code>, or generators and casts to a <code>list</code>.
+<h3 id="list"><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a><a class="headerlink" href="#list" title="Permanent link">&para;</a></h3>
+<p>Allows <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a>, or generators and casts to a <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a>.
 When a generic parameter is provided, the appropriate validation is applied to all items of the list.</p>
-<h3 id="typinglist"><code>typing.List</code><a class="headerlink" href="#typinglist" title="Permanent link">&para;</a></h3>
+<h3 id="typinglist"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.List"><code>typing.List</code></a><a class="headerlink" href="#typinglist" title="Permanent link">&para;</a></h3>
 <p>Handled the same as <code>list</code> above.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
 
@@ -4299,10 +4212,10 @@ When a generic parameter is provided, the appropriate validation is applied to a
 <span class="nb">print</span><span class="p">(</span><span class="n">Model</span><span class="p">(</span><span class="n">list_of_ints</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">list_of_ints</span><span class="p">)</span>
 <span class="c1">#&gt; [1, 2, 3]</span>
 </code></pre></div>
-<h3 id="tuple"><code>tuple</code><a class="headerlink" href="#tuple" title="Permanent link">&para;</a></h3>
-<p>Allows <code>list</code>, <code>tuple</code>, <code>set</code>, <code>frozenset</code>, <code>deque</code>, or generators and casts to a <code>tuple</code>.
+<h3 id="tuple"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a><a class="headerlink" href="#tuple" title="Permanent link">&para;</a></h3>
+<p>Allows <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a>, or generators and casts to a <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a>.
 When generic parameters are provided, the appropriate validation is applied to the respective items of the tuple</p>
-<h3 id="typingtuple"><code>typing.Tuple</code><a class="headerlink" href="#typingtuple" title="Permanent link">&para;</a></h3>
+<h3 id="typingtuple"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Tuple"><code>typing.Tuple</code></a><a class="headerlink" href="#typingtuple" title="Permanent link">&para;</a></h3>
 <p>Handled the same as <code>tuple</code> above.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span>
 
@@ -4319,10 +4232,10 @@ When generic parameters are provided, the appropriate validation is applied to t
 <span class="nb">print</span><span class="p">(</span><span class="n">Model</span><span class="p">(</span><span class="n">tuple_of_different_types</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">tuple_of_different_types</span><span class="p">)</span>
 <span class="c1">#&gt; (3, 2.0, True)</span>
 </code></pre></div>
-<h3 id="typingnamedtuple"><code>typing.NamedTuple</code><a class="headerlink" href="#typingnamedtuple" title="Permanent link">&para;</a></h3>
-<p>Subclasses of <code>typing.NamedTuple</code> are similar to <code>tuple</code>, but create instances of the given <code>namedtuple</code> class.</p>
-<p>Subclasses of <code>collections.namedtuple</code> are similar to subclass of <code>typing.NamedTuple</code>, but since field types are not specified,
-all fields are treated as having type <code>Any</code>.</p>
+<h3 id="typingnamedtuple"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.NamedTuple"><code>typing.NamedTuple</code></a><a class="headerlink" href="#typingnamedtuple" title="Permanent link">&para;</a></h3>
+<p>Subclasses of <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.NamedTuple"><code>typing.NamedTuple</code></a> are similar to <code>tuple</code>, but create instances of the given <code>namedtuple</code> class.</p>
+<p>Subclasses of <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.namedtuple"><code>collections.namedtuple</code></a> are similar to subclass of <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.NamedTuple"><code>typing.NamedTuple</code></a>, but since field types are not specified,
+all fields are treated as having type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Any"><code>Any</code></a>.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">NamedTuple</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ValidationError</span>
@@ -4348,10 +4261,10 @@ all fields are treated as having type <code>Any</code>.</p>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
 <h2 id="deque">Deque<a class="headerlink" href="#deque" title="Permanent link">&para;</a></h2>
-<h3 id="deque_1"><code>deque</code><a class="headerlink" href="#deque_1" title="Permanent link">&para;</a></h3>
-<p>Allows <code>list</code>, <code>tuple</code>, <code>set</code>, <code>frozenset</code>, <code>deque</code>, or generators and casts to a <code>deque</code>.
-When generic parameters are provided, the appropriate validation is applied to the respective items of the <code>deque</code></p>
-<h3 id="typingdeque"><code>typing.Deque</code><a class="headerlink" href="#typingdeque" title="Permanent link">&para;</a></h3>
+<h3 id="deque_1"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a><a class="headerlink" href="#deque_1" title="Permanent link">&para;</a></h3>
+<p>Allows <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a>, or generators and casts to a <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a>.
+When generic parameters are provided, the appropriate validation is applied to the respective items of the <code>deque</code>.</p>
+<h3 id="typingdeque"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Deque"><code>typing.Deque</code></a><a class="headerlink" href="#typingdeque" title="Permanent link">&para;</a></h3>
 <p>Handled the same as <code>deque</code> above.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Deque</span><span class="p">,</span> <span class="n">Optional</span>
 
@@ -4366,10 +4279,10 @@ When generic parameters are provided, the appropriate validation is applied to t
 <span class="c1">#&gt; deque([1, 2, 3])</span>
 </code></pre></div>
 <h2 id="sets">Sets<a class="headerlink" href="#sets" title="Permanent link">&para;</a></h2>
-<h3 id="set"><code>set</code><a class="headerlink" href="#set" title="Permanent link">&para;</a></h3>
-<p>Allows <code>list</code>, <code>tuple</code>, <code>set</code>, <code>frozenset</code>, <code>deque</code>, or generators and casts to a <code>set</code>.
+<h3 id="set"><a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a><a class="headerlink" href="#set" title="Permanent link">&para;</a></h3>
+<p>Allows <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a>, or generators and casts to a <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a>.
 When a generic parameter is provided, the appropriate validation is applied to all items of the set.</p>
-<h3 id="typingset"><code>typing.Set</code><a class="headerlink" href="#typingset" title="Permanent link">&para;</a></h3>
+<h3 id="typingset"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Set"><code>typing.Set</code></a><a class="headerlink" href="#typingset" title="Permanent link">&para;</a></h3>
 <p>Handled the same as <code>set</code> above.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Set</span>
 
@@ -4388,10 +4301,10 @@ When a generic parameter is provided, the appropriate validation is applied to a
 <span class="nb">print</span><span class="p">(</span><span class="n">Model</span><span class="p">(</span><span class="n">set_of_ints</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set_of_ints</span><span class="p">)</span>
 <span class="c1">#&gt; {1, 2, 3}</span>
 </code></pre></div>
-<h3 id="frozenset"><code>frozenset</code><a class="headerlink" href="#frozenset" title="Permanent link">&para;</a></h3>
-<p>Allows <code>list</code>, <code>tuple</code>, <code>set</code>, <code>frozenset</code>, <code>deque</code>, or generators and casts to a <code>frozenset</code>.
+<h3 id="frozenset"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a><a class="headerlink" href="#frozenset" title="Permanent link">&para;</a></h3>
+<p>Allows <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list"><code>list</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple"><code>tuple</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#set"><code>set</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/collections.html#collections.deque"><code>deque</code></a>, or generators and casts to a <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#frozenset"><code>frozenset</code></a>.
 When a generic parameter is provided, the appropriate validation is applied to all items of the frozen set.</p>
-<h3 id="typingfrozenset"><code>typing.FrozenSet</code><a class="headerlink" href="#typingfrozenset" title="Permanent link">&para;</a></h3>
+<h3 id="typingfrozenset"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet"><code>typing.FrozenSet</code></a><a class="headerlink" href="#typingfrozenset" title="Permanent link">&para;</a></h3>
 <p>Handled the same as <code>frozenset</code> above.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">FrozenSet</span><span class="p">,</span> <span class="n">Optional</span>
 
@@ -4416,19 +4329,19 @@ When a generic parameter is provided, the appropriate validation is applied to a
 <span class="c1">#&gt; [1, 2, 3]</span>
 </code></pre></div>
 <h2 id="other-iterables">Other Iterables<a class="headerlink" href="#other-iterables" title="Permanent link">&para;</a></h2>
-<h3 id="typingsequence"><code>typing.Sequence</code><a class="headerlink" href="#typingsequence" title="Permanent link">&para;</a></h3>
-<p>This is intended for use when the provided value should meet the requirements of the <code>Sequence</code> protocol, and it is
+<h3 id="typingsequence"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Sequence"><code>typing.Sequence</code></a><a class="headerlink" href="#typingsequence" title="Permanent link">&para;</a></h3>
+<p>This is intended for use when the provided value should meet the requirements of the <code>Sequence</code> ABC, and it is
 desirable to do eager validation of the values in the container. Note that when validation must be performed on the
 values of the container, the type of the container may not be preserved since validation may end up replacing values.
-We guarantee that the validated value will be a valid <code>typing.Sequence</code>, but it may have a different type than was
+We guarantee that the validated value will be a valid <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Sequence"><code>typing.Sequence</code></a>, but it may have a different type than was
 provided (generally, it will become a <code>list</code>).</p>
-<h3 id="typingiterable"><code>typing.Iterable</code><a class="headerlink" href="#typingiterable" title="Permanent link">&para;</a></h3>
+<h3 id="typingiterable"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterable"><code>typing.Iterable</code></a><a class="headerlink" href="#typingiterable" title="Permanent link">&para;</a></h3>
 <p>This is intended for use when the provided value may be an iterable that shouldn't be consumed.
 See <a href="#infinite-generators">Infinite Generators</a> below for more detail on parsing and validation.
-Similar to <code>typing.Sequence</code>, we guarantee that the validated result will be a valid <code>typing.Iterable</code>,
+Similar to <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Sequence"><code>typing.Sequence</code></a>, we guarantee that the validated result will be a valid <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterable"><code>typing.Iterable</code></a>,
 but it may have a different type than was provided. In particular, even if a non-generator type such as a <code>list</code>
-is provided, the post-validation value of a field of type <code>typing.Iterable</code> will be a generator.</p>
-<p>Here is a simple example using <code>typing.Sequence</code>:</p>
+is provided, the post-validation value of a field of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterable"><code>typing.Iterable</code></a> will be a generator.</p>
+<p>Here is a simple example using <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Sequence"><code>typing.Sequence</code></a>:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Sequence</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -4448,7 +4361,7 @@ is provided, the post-validation value of a field of type <code>typing.Iterable<
 In that case, the generator will be consumed and stored on the model as a list and its values will be
 validated against the type parameter of the <code>Sequence</code> (e.g. <code>int</code> in <code>Sequence[int]</code>).</p>
 <p>However, if you have a generator that you <em>don't</em> want to be eagerly consumed (e.g. an infinite
-generator or a remote data loader), you can use a field of type <code>Iterable</code>:</p>
+generator or a remote data loader), you can use a field of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterable"><code>Iterable</code></a>:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Iterable</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -4525,8 +4438,8 @@ To prevent it from being consumed, no validation of the yielded values is perfor
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
 <h2 id="mapping-types">Mapping Types<a class="headerlink" href="#mapping-types" title="Permanent link">&para;</a></h2>
-<h3 id="dict"><code>dict</code><a class="headerlink" href="#dict" title="Permanent link">&para;</a></h3>
-<p><code>dict(v)</code> is used to attempt to convert a dictionary. see <code>typing.Dict</code> below for sub-type constraints.</p>
+<h3 id="dict"><a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#dict"><code>dict</code></a><a class="headerlink" href="#dict" title="Permanent link">&para;</a></h3>
+<p><code>dict(v)</code> is used to attempt to convert a dictionary. see <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Dict"><code>typing.Dict</code></a> below for sub-type constraints.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ValidationError</span>
 
 
@@ -4548,7 +4461,7 @@ To prevent it from being consumed, no validation of the yielded values is perfor
 <span class="sd">      Input should be a valid dictionary [type=dict_type, input_value=&#39;test&#39;, input_type=str]</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h3 id="typingdict"><code>typing.Dict</code><a class="headerlink" href="#typingdict" title="Permanent link">&para;</a></h3>
+<h3 id="typingdict"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Dict"><code>typing.Dict</code></a><a class="headerlink" href="#typingdict" title="Permanent link">&para;</a></h3>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ValidationError</span>
@@ -4576,13 +4489,13 @@ To prevent it from being consumed, no validation of the yielded values is perfor
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is a new feature of the Python standard library as of Python 3.8.
-Because of limitations in <code>typing.TypedDict</code> before 3.12, the <a href="https://pypi.org/project/typing-extensions/">typing-extensions</a>
+Because of limitations in <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict">typing.TypedDict</a> before 3.12, the <a href="https://pypi.org/project/typing-extensions/">typing-extensions</a>
 package is required for Python &lt;3.12. You'll need to import <code>TypedDict</code> from <code>typing_extensions</code> instead of <code>typing</code> and will
 get a build time error if you don't.</p>
 </div>
-<p><a href="https://docs.python.org/3/library/typing.html#typing.TypedDict">TypedDict</a> declares a dictionary type that expects all of
+<p><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict"><code>TypedDict</code></a> declares a dictionary type that expects all of
 its instances to have a certain set of keys, where each key is associated with a value of a consistent type.</p>
-<p>It is same as <code>dict</code> but Pydantic will validate the dictionary since keys are annotated.</p>
+<p>It is same as <a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#dict"><code>dict</code></a> but Pydantic will validate the dictionary since keys are annotated.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">TypedDict</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">TypeAdapter</span><span class="p">,</span> <span class="n">ValidationError</span>
@@ -4608,7 +4521,7 @@ its instances to have a certain set of keys, where each key is associated with a
 <span class="sd">      Field required [type=missing, input_value={&#39;name&#39;: &#39;foo&#39;}, input_type=dict]</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<p>You can define <code>__pydantic_config__</code> to change the model inherited from <code>TypedDict</code>.
+<p>You can define <code>__pydantic_config__</code> to change the model inherited from <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict"><code>TypedDict</code></a>.
 See the <a class="autorefs autorefs-internal" href="../config/#pydantic.config.ConfigDict"><code>ConfigDict</code> API reference</a> for more details.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 
@@ -4680,7 +4593,7 @@ See the <a class="autorefs autorefs-internal" href="../config/#pydantic.config.C
 </code></pre></div>
 <h2 id="callable">Callable<a class="headerlink" href="#callable" title="Permanent link">&para;</a></h2>
 <p>See below for more detail on parsing and validation</p>
-<p>Fields can also be of type <code>Callable</code>:</p>
+<p>Fields can also be of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Callable"><code>Callable</code></a>:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -4702,12 +4615,12 @@ type is performed.</p>
 </div>
 <h2 id="ip-address-types">IP Address Types<a class="headerlink" href="#ip-address-types" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>ipaddress.IPv4Address</code>: Uses the type itself for validation by passing the value to <code>IPv4Address(v)</code>.</li>
-<li><code>ipaddress.IPv4Interface</code>: Uses the type itself for validation by passing the value to <code>IPv4Address(v)</code>.</li>
-<li><code>ipaddress.IPv4Network</code>: Uses the type itself for validation by passing the value to <code>IPv4Network(v)</code>.</li>
-<li><code>ipaddress.IPv6Address</code>: Uses the type itself for validation by passing the value to <code>IPv6Address(v)</code>.</li>
-<li><code>ipaddress.IPv6Interface</code>: Uses the type itself for validation by passing the value to <code>IPv6Interface(v)</code>.</li>
-<li><code>ipaddress.IPv6Network</code>: Uses the type itself for validation by passing the value to <code>IPv6Network(v)</code>.</li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Address"><code>ipaddress.IPv4Address</code></a>: Uses the type itself for validation by passing the value to <code>IPv4Address(v)</code>.</li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Interface"><code>ipaddress.IPv4Interface</code></a>: Uses the type itself for validation by passing the value to <code>IPv4Address(v)</code>.</li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network"><code>ipaddress.IPv4Network</code></a>: Uses the type itself for validation by passing the value to <code>IPv4Network(v)</code>.</li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv6Address"><code>ipaddress.IPv6Address</code></a>: Uses the type itself for validation by passing the value to <code>IPv6Address(v)</code>.</li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv6Interface"><code>ipaddress.IPv6Interface</code></a>: Uses the type itself for validation by passing the value to <code>IPv6Interface(v)</code>.</li>
+<li><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv6Network"><code>ipaddress.IPv6Network</code></a>: Uses the type itself for validation by passing the value to <code>IPv6Network(v)</code>.</li>
 </ul>
 <p>See <a href="../networks/">Network Types</a> for other custom IP address types.</p>
 <h2 id="uuid">UUID<a class="headerlink" href="#uuid" title="Permanent link">&para;</a></h2>
@@ -4721,13 +4634,13 @@ There's a fallback to <code>UUID(bytes=v)</code> for <code>bytes</code> and <cod
 <li><a class="autorefs autorefs-internal" href="../types/#pydantic.types.UUID5"><code>UUID5</code></a>: requires UUID version 5.</li>
 </ul>
 <h2 id="union">Union<a class="headerlink" href="#union" title="Permanent link">&para;</a></h2>
-<p>Pydantic has extensive support for union validation, both <code>typing.Union</code> and Python 3.10's pipe syntax (<code>A | B</code>) are supported.
+<p>Pydantic has extensive support for union validation, both <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Union"><code>typing.Union</code></a> and Python 3.10's pipe syntax (<code>A | B</code>) are supported.
 Read more in the <a href="../../concepts/unions/"><code>Unions</code></a> section of the concepts docs.</p>
-<h2 id="type-and-typevar"><code>Type</code> and <code>TypeVar</code><a class="headerlink" href="#type-and-typevar" title="Permanent link">&para;</a></h2>
-<h3 id="type"><code>type</code><a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
+<h2 id="type-and-typevar"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Type"><code>Type</code></a> and <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.TypeVar"><code>TypeVar</code></a><a class="headerlink" href="#type-and-typevar" title="Permanent link">&para;</a></h2>
+<h3 id="type"><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-type"><code>type</code></a><a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
 <p>Pydantic supports the use of <code>type[T]</code> to specify that a field may only accept classes (not instances)
 that are subclasses of <code>T</code>.</p>
-<h3 id="typingtype"><code>typing.Type</code><a class="headerlink" href="#typingtype" title="Permanent link">&para;</a></h3>
+<h3 id="typingtype"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Type"><code>typing.Type</code></a><a class="headerlink" href="#typingtype" title="Permanent link">&para;</a></h3>
 <p>Handled the same as <code>type</code> above.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Type</span>
 
@@ -4788,8 +4701,8 @@ that are subclasses of <code>T</code>.</p>
 <span class="sd">      Input should be a type [type=is_type, input_value=&lt;__main__.Foo object at 0x0123456789ab&gt;, input_type=Foo]</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h3 id="typingtypevar"><code>typing.TypeVar</code><a class="headerlink" href="#typingtypevar" title="Permanent link">&para;</a></h3>
-<p><code>TypeVar</code> is supported either unconstrained, constrained or with a bound.</p>
+<h3 id="typingtypevar"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.TypeVar"><code>typing.TypeVar</code></a><a class="headerlink" href="#typingtypevar" title="Permanent link">&para;</a></h3>
+<p><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.TypeVar"><code>TypeVar</code></a> is supported either unconstrained, constrained or with a bound.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">TypeVar</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -4813,7 +4726,7 @@ that are subclasses of <code>T</code>.</p>
 <span class="c1">#&gt; a=None b=1.0 c=1</span>
 </code></pre></div>
 <h2 id="none-types">None Types<a class="headerlink" href="#none-types" title="Permanent link">&para;</a></h2>
-<p><code>None</code>, <code>type(None)</code>, or <code>Literal[None]</code> are all equivalent according to <a href="https://www.python.org/dev/peps/pep-0484/#using-none">PEP 484</a>.
+<p><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a>, <code>type(None)</code>, or <code>Literal[None]</code> are all equivalent according to <a href="https://typing.readthedocs.io/en/latest/spec/special-types.html#none">the typing specification</a>.
 Allows only <code>None</code> value.</p>
 <h2 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link">&para;</a></h2>
 <p><code>str</code>: Strings are accepted as-is. <code>bytes</code> and <code>bytearray</code> are converted using <code>v.decode()</code>.
@@ -4867,15 +4780,9 @@ view, this is frequently not intended as is a common source of bugs.</p>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
 <h2 id="bytes">Bytes<a class="headerlink" href="#bytes" title="Permanent link">&para;</a></h2>
-<p><code>bytes</code> are accepted as-is. <code>bytearray</code> is converted using <code>bytes(v)</code>. <code>str</code> are converted using <code>v.encode()</code>. <code>int</code>, <code>float</code>, and <code>Decimal</code> are coerced using <code>str(v).encode()</code>. See <a href="../types/#pydantic.types.ByteSize">ByteSize</a> for more details.</p>
-<h2 id="typingliteral"><code>typing.Literal</code><a class="headerlink" href="#typingliteral" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is a new feature of the Python standard library as of Python 3.8;
-prior to Python 3.8, it requires the <a href="https://pypi.org/project/typing-extensions/">typing-extensions</a> package.</p>
-</div>
-<p>Pydantic supports the use of <code>typing.Literal</code> (or <code>typing_extensions.Literal</code> prior to Python 3.8)
-as a lightweight way to specify that a field may accept only specific literal values:</p>
+<p><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#bytes"><code>bytes</code></a> are accepted as-is. <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#bytearray"><code>bytearray</code></a> is converted using <code>bytes(v)</code>. <code>str</code> are converted using <code>v.encode()</code>. <code>int</code>, <code>float</code>, and <code>Decimal</code> are coerced using <code>str(v).encode()</code>. See <a href="../types/#pydantic.types.ByteSize">ByteSize</a> for more details.</p>
+<h2 id="typingliteral"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Literal"><code>typing.Literal</code></a><a class="headerlink" href="#typingliteral" title="Permanent link">&para;</a></h2>
+<p>Pydantic supports the use of <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Literal"><code>typing.Literal</code></a> as a lightweight way to specify that a field may accept only specific literal values:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Literal</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ValidationError</span>
@@ -4970,37 +4877,96 @@ without needing to declare custom validators:</p>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">Meal</span><span class="p">(</span><span class="n">dessert</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;kind&#39;</span><span class="p">:</span> <span class="s1">&#39;cake&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">dessert</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
 <span class="c1">#&gt; Dessert</span>
 </code></pre></div>
-<h2 id="typingany"><code>typing.Any</code><a class="headerlink" href="#typingany" title="Permanent link">&para;</a></h2>
+<h2 id="typingany"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Any"><code>typing.Any</code></a><a class="headerlink" href="#typingany" title="Permanent link">&para;</a></h2>
 <p>Allows any value, including <code>None</code>.</p>
-<h2 id="typingannotated"><code>typing.Annotated</code><a class="headerlink" href="#typingannotated" title="Permanent link">&para;</a></h2>
-<p>Allows wrapping another type with arbitrary metadata, as per <a href="https://www.python.org/dev/peps/pep-0593/">PEP-593</a>. The <code>Annotated</code> hint may contain a single call to the <a href="../../concepts/json_schema/#typingannotated-fields"><code>Field</code> function</a>, but otherwise the additional metadata is ignored and the root type is used.</p>
-<h2 id="typingpattern"><code>typing.Pattern</code><a class="headerlink" href="#typingpattern" title="Permanent link">&para;</a></h2>
+<h2 id="typinghashable"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Hashable"><code>typing.Hashable</code></a><a class="headerlink" href="#typinghashable" title="Permanent link">&para;</a></h2>
+<ul>
+<li>From Python, supports any data that passes an <code>isinstance(v, Hashable)</code> check.</li>
+<li>From JSON, first loads the data via an <code>Any</code> validator, then checks if the data is hashable with <code>isinstance(v, Hashable)</code>.</li>
+</ul>
+<h2 id="typingannotated"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Annotated"><code>typing.Annotated</code></a><a class="headerlink" href="#typingannotated" title="Permanent link">&para;</a></h2>
+<p>Allows wrapping another type with arbitrary metadata, as per <a href="https://www.python.org/dev/peps/pep-0593/">PEP-593</a>. The <code>Annotated</code> hint may contain a single call to the <a href="../../concepts/types/#composing-types-via-annotated"><code>Field</code> function</a>, but otherwise the additional metadata is ignored and the root type is used.</p>
+<h2 id="typingpattern"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Pattern"><code>typing.Pattern</code></a><a class="headerlink" href="#typingpattern" title="Permanent link">&para;</a></h2>
 <p>Will cause the input value to be passed to <code>re.compile(v)</code> to create a regular expression pattern.</p>
-<h2 id="pathlibpath"><code>pathlib.Path</code><a class="headerlink" href="#pathlibpath" title="Permanent link">&para;</a></h2>
+<h2 id="pathlibpath"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path"><code>pathlib.Path</code></a><a class="headerlink" href="#pathlibpath" title="Permanent link">&para;</a></h2>
 <p>Simply uses the type itself for validation by passing the value to <code>Path(v)</code>.</p>
 
+
+
+
+
+
+
   
   
 
 
 
+  
 
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 
   <script src="/flarelytics/client.js"></script>
       <script>
-    window.mkdocs_run_deps = ["pydantic==2.6.0", "pydantic-core==2.16.1"]
+    window.mkdocs_run_deps = ["pydantic==2.10.0a1", "pydantic-core==2.24.0", "pydantic-extra-types==2.9.0"]
     </script>
 
               </article>
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -5013,7 +4979,7 @@ without needing to declare custom validators:</p>
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs Insiders
+      Material for MkDocs
     </a>
   
 </div>
@@ -5027,10 +4993,15 @@ without needing to declare custom validators:</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "announce.dismiss", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.f2da59ea.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-      <script src="../../assets/javascripts/bundle.65061dd4.min.js"></script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "announce.dismiss", "navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../extra/feedback.js"></script>
       
         <script src="../../extra/fluff.js"></script>
       

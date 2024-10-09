@@ -19,11 +19,8 @@
         <link rel="next" href="../json/">
       
       
-        
-      
-      
       <link rel="icon" href="../../favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2+insiders-4.42.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
     
     
       
@@ -31,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f2778614.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.46987102.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -59,10 +56,39 @@
     
       <link rel="stylesheet" href="../../extra/tweaks.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
 
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="JSON Schema - Pydantic" >
+      
+        <meta  property="og:description"  content="Data validation using Python type hints" >
+      
+        <meta  property="og:image"  content="https://docs.pydantic.dev/latest/assets/images/social/concepts/json_schema.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.pydantic.dev/latest/concepts/json_schema/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="JSON Schema - Pydantic" >
+      
+        <meta  name="twitter:description"  content="Data validation using Python type hints" >
+      
+        <meta  name="twitter:image"  content="https://docs.pydantic.dev/latest/assets/images/social/concepts/json_schema.png" >
+      
     
     
   </head>
@@ -96,17 +122,21 @@
             
               <button class="md-banner__button md-icon" aria-label="Don't show this again">
                 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
               </button>
             
             
   <!-- the following line is displayed in the announcement bar -->
 <!-- keep length under 164 characters (less HTML tags) to fit on 1280px desktop window -->
-<a href="https://docs.pydantic.dev/2.0/blog/pydantic-v2-final/">Pydantic V2</a> is here 🚀! Upgrading an existing app? See the <a href="https://docs.pydantic.dev/2.0/migration/">Migration Guide</a> for tips on essential changes from Pydantic V1!
+What's new &mdash; we've launched
+<a href="https://pydantic.dev/articles/logfire-announcement">Pydantic Logfire</a>
+<img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f525.svg" title=":fire:">
+to help you monitor and understand your
+<a href="https://logfire.pydantic.dev/docs/integrations/pydantic/" id="logfire-app-type" target="_blank">Pydantic validations.</a>
 
           </div>
           
-            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
           
         </aside>
       
@@ -128,7 +158,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -156,7 +186,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
       </label>
     
   
@@ -166,7 +196,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
       </label>
     
   
@@ -174,13 +204,13 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -189,21 +219,23 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -220,7 +252,7 @@
         <a href="https://github.com/pydantic/pydantic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     pydantic/pydantic
@@ -311,10 +343,27 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href="../../architecture/" class="md-tabs__link">
+        
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
     
     
       <li class="md-tabs__item">
-        <a href="../../examples/secrets/" class="md-tabs__link">
+        <a href="../../examples/files/" class="md-tabs__link">
           
   
   Examples
@@ -350,7 +399,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../integrations/mypy/" class="md-tabs__link">
+        <a href="../../integrations/logfire/" class="md-tabs__link">
           
   
   Integrations
@@ -429,7 +478,7 @@
       <a href="https://github.com/pydantic/pydantic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     pydantic/pydantic
@@ -444,34 +493,29 @@
   
   
   
-    
-    
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
     Get Started
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -480,11 +524,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Get Started
-  
-
+            Get Started
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -493,19 +533,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Welcome to Pydantic
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -516,6 +551,7 @@
             
               
                 
+  
   
   
   
@@ -524,14 +560,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Why use Pydantic
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -542,6 +572,7 @@
             
               
                 
+  
   
   
   
@@ -550,14 +581,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Help with Pydantic
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -568,6 +593,7 @@
             
               
                 
+  
   
   
   
@@ -576,14 +602,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Installation
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -594,6 +614,7 @@
             
               
                 
+  
   
   
   
@@ -602,14 +623,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Migration Guide
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -620,6 +635,7 @@
             
               
                 
+  
   
   
   
@@ -628,14 +644,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Version Policy
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -646,6 +656,7 @@
             
               
                 
+  
   
   
   
@@ -654,14 +665,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Contributing
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -675,19 +680,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Changelog
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -710,17 +710,21 @@
     
   
   
-    
-    
+  
     
     
     
       
+        
+        
       
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
@@ -730,14 +734,8 @@
             
   
   <span class="md-ellipsis">
-    
-  
     Concepts
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -746,11 +744,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Concepts
-  
-
+            Concepts
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -759,19 +753,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Models
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -782,6 +771,7 @@
             
               
                 
+  
   
   
   
@@ -790,14 +780,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Fields
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -811,6 +795,7 @@
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -823,14 +808,8 @@
           
   
   <span class="md-ellipsis">
-    
-  
     JSON Schema
-  
-
-    
   </span>
-  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -840,14 +819,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     JSON Schema
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -870,9 +843,7 @@
         <li class="md-nav__item">
   <a href="#generating-json-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Generating JSON Schema
-      
+      Generating JSON Schema
     </span>
   </a>
   
@@ -882,9 +853,7 @@
           <li class="md-nav__item">
   <a href="#configuring-the-jsonschemamode" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Configuring the JsonSchemaMode
-      
+      Configuring the JsonSchemaMode
     </span>
   </a>
   
@@ -898,9 +867,7 @@
         <li class="md-nav__item">
   <a href="#customizing-json-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Customizing JSON Schema
-      
+      Customizing JSON Schema
     </span>
   </a>
   
@@ -910,9 +877,7 @@
           <li class="md-nav__item">
   <a href="#field-level-customization" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Field-Level Customization
-      
+      Field-Level Customization
     </span>
   </a>
   
@@ -922,9 +887,7 @@
           <li class="md-nav__item">
   <a href="#unenforced-field-constraints" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Unenforced Field constraints
-      
+      Unenforced Field constraints
     </span>
   </a>
   
@@ -936,11 +899,18 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#programmatic-field-title-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programmatic field title generation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#model-level-customization" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Model-Level Customization
-      
+      Model-Level Customization
     </span>
   </a>
   
@@ -949,9 +919,7 @@
           <li class="md-nav__item">
   <a href="#using-json_schema_extra" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Using json_schema_extra
-      
+      Using json_schema_extra
     </span>
   </a>
   
@@ -961,9 +929,7 @@
           <li class="md-nav__item">
   <a href="#using-json_schema_extra-with-a-dict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Using json_schema_extra with a dict
-      
+      Using json_schema_extra with a dict
     </span>
   </a>
   
@@ -972,9 +938,16 @@
           <li class="md-nav__item">
   <a href="#using-json_schema_extra-with-a-callable" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Using json_schema_extra with a Callable
-      
+      Using json_schema_extra with a Callable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merging-json_schema_extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merging json_schema_extra
     </span>
   </a>
   
@@ -988,9 +961,7 @@
           <li class="md-nav__item">
   <a href="#withjsonschema-annotation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        WithJsonSchema annotation
-      
+      WithJsonSchema annotation
     </span>
   </a>
   
@@ -999,9 +970,7 @@
           <li class="md-nav__item">
   <a href="#skipjsonschema-annotation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        SkipJsonSchema annotation
-      
+      SkipJsonSchema annotation
     </span>
   </a>
   
@@ -1010,9 +979,7 @@
           <li class="md-nav__item">
   <a href="#implementing-__get_pydantic_core_schema__" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Implementing __get_pydantic_core_schema__
-      
+      Implementing __get_pydantic_core_schema__
     </span>
   </a>
   
@@ -1021,9 +988,25 @@
           <li class="md-nav__item">
   <a href="#implementing-__get_pydantic_json_schema__" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Implementing __get_pydantic_json_schema__
-      
+      Implementing __get_pydantic_json_schema__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-field_title_generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using field_title_generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-model_title_generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using model_title_generator
     </span>
   </a>
   
@@ -1037,9 +1020,7 @@
         <li class="md-nav__item">
   <a href="#json-schema-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        JSON schema types
-      
+      JSON schema types
     </span>
   </a>
   
@@ -1048,9 +1029,7 @@
         <li class="md-nav__item">
   <a href="#top-level-schema-generation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Top-level schema generation
-      
+      Top-level schema generation
     </span>
   </a>
   
@@ -1059,9 +1038,7 @@
         <li class="md-nav__item">
   <a href="#customizing-the-json-schema-generation-process" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Customizing the JSON Schema Generation Process
-      
+      Customizing the JSON Schema Generation Process
     </span>
   </a>
   
@@ -1070,9 +1047,7 @@
         <li class="md-nav__item">
   <a href="#customizing-the-refs-in-json-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Customizing the $refs in JSON Schema
-      
+      Customizing the $refs in JSON Schema
     </span>
   </a>
   
@@ -1081,9 +1056,7 @@
         <li class="md-nav__item">
   <a href="#miscellaneous-notes-on-json-schema-generation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Miscellaneous Notes on JSON Schema Generation
-      
+      Miscellaneous Notes on JSON Schema Generation
     </span>
   </a>
   
@@ -1103,19 +1076,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     JSON
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1126,6 +1094,7 @@
             
               
                 
+  
   
   
   
@@ -1134,14 +1103,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1152,6 +1115,7 @@
             
               
                 
+  
   
   
   
@@ -1160,14 +1124,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Unions
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1178,6 +1136,7 @@
             
               
                 
+  
   
   
   
@@ -1186,14 +1145,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Alias
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1204,6 +1157,7 @@
             
               
                 
+  
   
   
   
@@ -1212,14 +1166,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Configuration
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1230,6 +1178,7 @@
             
               
                 
+  
   
   
   
@@ -1238,14 +1187,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Serialization
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1256,6 +1199,7 @@
             
               
                 
+  
   
   
   
@@ -1264,14 +1208,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Validators
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1282,6 +1220,7 @@
             
               
                 
+  
   
   
   
@@ -1290,14 +1229,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Dataclasses
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1308,6 +1241,7 @@
             
               
                 
+  
   
   
   
@@ -1316,14 +1250,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Postponed Annotations
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1334,6 +1262,7 @@
             
               
                 
+  
   
   
   
@@ -1342,14 +1271,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Strict Mode
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1360,6 +1283,7 @@
             
               
                 
+  
   
   
   
@@ -1368,14 +1292,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Type Adapter
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1386,6 +1304,7 @@
             
               
                 
+  
   
   
   
@@ -1394,14 +1313,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Validation Decorator
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1412,6 +1325,7 @@
             
               
                 
+  
   
   
   
@@ -1420,14 +1334,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Conversion Table
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1438,6 +1346,7 @@
             
               
                 
+  
   
   
   
@@ -1446,14 +1355,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Settings Management
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1464,6 +1367,7 @@
             
               
                 
+  
   
   
   
@@ -1472,14 +1376,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Performance
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1493,19 +1391,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../plugins/" class="md-nav__link">
+      <a href="../experimental/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Pydantic Plugins
-  
-
-    
+    Experimental
   </span>
-  
   
 
       </a>
@@ -1526,34 +1419,29 @@
   
   
   
-    
-    
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
     API Documentation
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1562,11 +1450,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    API Documentation
-  
-
+            API Documentation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1575,14 +1459,18 @@
   
   
   
+  
     
     
     
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
@@ -1592,14 +1480,8 @@
             
   
   <span class="md-ellipsis">
-    
-  
     Pydantic
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1608,11 +1490,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Pydantic
-  
-
+            Pydantic
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1621,19 +1499,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../api/base_model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     BaseModel
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1644,6 +1517,7 @@
             
               
                 
+  
   
   
   
@@ -1652,14 +1526,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     RootModel
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1670,6 +1538,7 @@
             
               
                 
+  
   
   
   
@@ -1678,14 +1547,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Dataclasses
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1696,6 +1559,7 @@
             
               
                 
+  
   
   
   
@@ -1704,14 +1568,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     TypeAdapter
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1722,6 +1580,7 @@
             
               
                 
+  
   
   
   
@@ -1730,14 +1589,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Validate Call
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1748,6 +1601,7 @@
             
               
                 
+  
   
   
   
@@ -1756,14 +1610,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Fields
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1774,6 +1622,7 @@
             
               
                 
+  
   
   
   
@@ -1782,14 +1631,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Aliases
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1800,6 +1643,7 @@
             
               
                 
+  
   
   
   
@@ -1808,14 +1652,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Configuration
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1826,6 +1664,7 @@
             
               
                 
+  
   
   
   
@@ -1834,14 +1673,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     JSON Schema
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1852,6 +1685,7 @@
             
               
                 
+  
   
   
   
@@ -1860,14 +1694,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Errors
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1878,6 +1706,7 @@
             
               
                 
+  
   
   
   
@@ -1886,14 +1715,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Functional Validators
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1904,6 +1727,7 @@
             
               
                 
+  
   
   
   
@@ -1912,14 +1736,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Functional Serializers
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1930,6 +1748,7 @@
             
               
                 
+  
   
   
   
@@ -1938,14 +1757,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Standard Library Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1956,6 +1769,7 @@
             
               
                 
+  
   
   
   
@@ -1964,14 +1778,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1982,6 +1790,7 @@
             
               
                 
+  
   
   
   
@@ -1990,14 +1799,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Network Types
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2008,6 +1811,7 @@
             
               
                 
+  
   
   
   
@@ -2016,14 +1820,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Version Information
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2035,31 +1833,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/plugin/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Pydantic Plugins
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2068,14 +1841,29 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Annotated Handlers
-  
-
-    
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/experimental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Experimental
+  </span>
   
 
       </a>
@@ -2097,14 +1885,18 @@
   
   
   
+  
     
     
     
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
@@ -2114,14 +1906,8 @@
             
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Core
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2130,11 +1916,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Pydantic Core
-  
-
+            Pydantic Core
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2143,19 +1925,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../api/pydantic_core/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     pydantic_core
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2169,19 +1946,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../api/pydantic_core_schema/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     pydantic_core.core_schema
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2203,19 +1975,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../api/pydantic_settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Settings
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2229,14 +1996,18 @@
   
   
   
+  
     
     
     
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
@@ -2246,14 +2017,8 @@
             
   
   <span class="md-ellipsis">
-    
-  
     Pydantic Extra Types
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2262,16 +2027,13 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Pydantic Extra Types
-  
-
+            Pydantic Extra Types
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
+  
   
   
   
@@ -2280,14 +2042,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Color
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2298,6 +2054,7 @@
             
               
                 
+  
   
   
   
@@ -2306,14 +2063,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Country
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2324,6 +2075,7 @@
             
               
                 
+  
   
   
   
@@ -2332,14 +2084,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Payment
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2350,6 +2096,7 @@
             
               
                 
+  
   
   
   
@@ -2358,14 +2105,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Phone Numbers
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2376,6 +2117,7 @@
             
               
                 
+  
   
   
   
@@ -2384,14 +2126,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Routing Numbers
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2402,6 +2138,7 @@
             
               
                 
+  
   
   
   
@@ -2410,14 +2147,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Coordinate
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2428,6 +2159,7 @@
             
               
                 
+  
   
   
   
@@ -2436,14 +2168,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     Mac Address
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2454,6 +2180,7 @@
             
               
                 
+  
   
   
   
@@ -2462,14 +2189,8 @@
         
   
   <span class="md-ellipsis">
-    
-  
     ISBN
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2477,92 +2198,157 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    
-  
-    Examples
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Examples
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../examples/secrets/" class="md-nav__link">
+      <a href="../../api/pydantic_extra_types_pendulum_dt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Secrets
-  
-
-    
+    Pendulum
   </span>
-  
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/pydantic_extra_types_currency_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Currency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/pydantic_extra_types_language_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/pydantic_extra_types_script_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Script Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/pydantic_extra_types_semantic_version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semantic Version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/pydantic_extra_types_timezone_name/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timezone Name
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/pydantic_extra_types_ulid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ULID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2580,34 +2366,49 @@
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
     
-    
+      
+      
+  
+  
+  
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
-    Error Messages
-  
-
-    
+    Examples
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2616,11 +2417,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Error Messages
-  
-
+            Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2629,19 +2426,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../errors/errors/" class="md-nav__link">
+      <a href="../../examples/files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Error Handling
-  
-
-    
+    Validating File Data
   </span>
-  
   
 
       </a>
@@ -2655,19 +2447,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../errors/validation_errors/" class="md-nav__link">
+      <a href="../../examples/requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Validation Errors
-  
-
-    
+    Web and API Requests
   </span>
-  
   
 
       </a>
@@ -2681,19 +2468,56 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../errors/usage_errors/" class="md-nav__link">
+      <a href="../../examples/queues/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Usage Errors
-  
-
-    
+    Queues
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/orms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/custom_validators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Validators
+  </span>
   
 
       </a>
@@ -2714,34 +2538,29 @@
   
   
   
-    
-    
+  
     
     
     
       
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    
-  
-    Integrations
-  
-
-    
+    Error Messages
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2750,11 +2569,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Integrations
-  
-
+            Error Messages
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2763,19 +2578,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../integrations/mypy/" class="md-nav__link">
+      <a href="../../errors/errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Mypy
-  
-
-    
+    Error Handling
   </span>
-  
   
 
       </a>
@@ -2789,19 +2599,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../integrations/pycharm/" class="md-nav__link">
+      <a href="../../errors/validation_errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    PyCharm
-  
-
-    
+    Validation Errors
   </span>
-  
   
 
       </a>
@@ -2815,123 +2620,14 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../integrations/hypothesis/" class="md-nav__link">
+      <a href="../../errors/usage_errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
-    Hypothesis
-  
-
-    
+    Usage Errors
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/visual_studio_code/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Visual Studio Code
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/datamodel_code_generator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    datamodel-code-generator
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/devtools/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    devtools
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/rich/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Rich
-  
-
-    
-  </span>
-  
   
 
       </a>
@@ -2952,19 +2648,367 @@
   
   
   
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/logfire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pydantic Logfire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dev Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Dev Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/mypy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mypy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/pycharm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PyCharm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/hypothesis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypothesis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/visual_studio_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Studio Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/datamodel_code_generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    datamodel-code-generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/devtools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    devtools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/rich/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/linting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Production Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Production Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/aws_lambda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Lambda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="https://blog.pydantic.dev/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Blog
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -2977,19 +3021,14 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../pydantic_people/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    
-  
     Pydantic People
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -3026,9 +3065,7 @@
         <li class="md-nav__item">
   <a href="#generating-json-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Generating JSON Schema
-      
+      Generating JSON Schema
     </span>
   </a>
   
@@ -3038,9 +3075,7 @@
           <li class="md-nav__item">
   <a href="#configuring-the-jsonschemamode" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Configuring the JsonSchemaMode
-      
+      Configuring the JsonSchemaMode
     </span>
   </a>
   
@@ -3054,9 +3089,7 @@
         <li class="md-nav__item">
   <a href="#customizing-json-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Customizing JSON Schema
-      
+      Customizing JSON Schema
     </span>
   </a>
   
@@ -3066,9 +3099,7 @@
           <li class="md-nav__item">
   <a href="#field-level-customization" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Field-Level Customization
-      
+      Field-Level Customization
     </span>
   </a>
   
@@ -3078,9 +3109,7 @@
           <li class="md-nav__item">
   <a href="#unenforced-field-constraints" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Unenforced Field constraints
-      
+      Unenforced Field constraints
     </span>
   </a>
   
@@ -3092,11 +3121,18 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#programmatic-field-title-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programmatic field title generation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#model-level-customization" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Model-Level Customization
-      
+      Model-Level Customization
     </span>
   </a>
   
@@ -3105,9 +3141,7 @@
           <li class="md-nav__item">
   <a href="#using-json_schema_extra" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Using json_schema_extra
-      
+      Using json_schema_extra
     </span>
   </a>
   
@@ -3117,9 +3151,7 @@
           <li class="md-nav__item">
   <a href="#using-json_schema_extra-with-a-dict" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Using json_schema_extra with a dict
-      
+      Using json_schema_extra with a dict
     </span>
   </a>
   
@@ -3128,9 +3160,16 @@
           <li class="md-nav__item">
   <a href="#using-json_schema_extra-with-a-callable" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Using json_schema_extra with a Callable
-      
+      Using json_schema_extra with a Callable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merging-json_schema_extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merging json_schema_extra
     </span>
   </a>
   
@@ -3144,9 +3183,7 @@
           <li class="md-nav__item">
   <a href="#withjsonschema-annotation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        WithJsonSchema annotation
-      
+      WithJsonSchema annotation
     </span>
   </a>
   
@@ -3155,9 +3192,7 @@
           <li class="md-nav__item">
   <a href="#skipjsonschema-annotation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        SkipJsonSchema annotation
-      
+      SkipJsonSchema annotation
     </span>
   </a>
   
@@ -3166,9 +3201,7 @@
           <li class="md-nav__item">
   <a href="#implementing-__get_pydantic_core_schema__" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Implementing __get_pydantic_core_schema__
-      
+      Implementing __get_pydantic_core_schema__
     </span>
   </a>
   
@@ -3177,9 +3210,25 @@
           <li class="md-nav__item">
   <a href="#implementing-__get_pydantic_json_schema__" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Implementing __get_pydantic_json_schema__
-      
+      Implementing __get_pydantic_json_schema__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-field_title_generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using field_title_generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-model_title_generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using model_title_generator
     </span>
   </a>
   
@@ -3193,9 +3242,7 @@
         <li class="md-nav__item">
   <a href="#json-schema-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        JSON schema types
-      
+      JSON schema types
     </span>
   </a>
   
@@ -3204,9 +3251,7 @@
         <li class="md-nav__item">
   <a href="#top-level-schema-generation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Top-level schema generation
-      
+      Top-level schema generation
     </span>
   </a>
   
@@ -3215,9 +3260,7 @@
         <li class="md-nav__item">
   <a href="#customizing-the-json-schema-generation-process" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Customizing the JSON Schema Generation Process
-      
+      Customizing the JSON Schema Generation Process
     </span>
   </a>
   
@@ -3226,9 +3269,7 @@
         <li class="md-nav__item">
   <a href="#customizing-the-refs-in-json-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Customizing the $refs in JSON Schema
-      
+      Customizing the $refs in JSON Schema
     </span>
   </a>
   
@@ -3237,9 +3278,7 @@
         <li class="md-nav__item">
   <a href="#miscellaneous-notes-on-json-schema-generation" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Miscellaneous Notes on JSON Schema Generation
-      
+      Miscellaneous Notes on JSON Schema Generation
     </span>
   </a>
   
@@ -3255,7 +3294,6 @@
           
           
             <div class="md-content" data-md-component="content">
-              
               <article class="md-content__inner md-typeset">
                 
   
@@ -3312,7 +3350,7 @@ of the JSON schema generation process overall. The same effects can be achieved 
 depending on your use case, one approach might offer a more simple solution than the other.</p>
 </div>
 <p>Here's an example of generating JSON schema from a <code>BaseModel</code>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python 3.7 and above</label><label for="__tabbed_1_2">Python 3.9 and above</label><label for="__tabbed_1_3">Python 3.10 and above</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python 3.8 and above</label><label for="__tabbed_1_2">Python 3.9 and above</label><label for="__tabbed_1_3">Python 3.10 and above</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
@@ -3815,8 +3853,8 @@ The <a href="#using-json_schema_extra">Using <code>json_schema_extra</code></a> 
 <ol>
 <li><a href="#withjsonschema-annotation"><code>WithJsonSchema</code> annotation</a></li>
 <li><a href="#skipjsonschema-annotation"><code>SkipJsonSchema</code> annotation</a></li>
-<li><a href="#implementing-getpydanticcoreschema">Implementing <code>__get_pydantic_core_schema__</code></a></li>
-<li><a href="#implementing-getpydanticjsonschema">Implementing <code>__get_pydantic_json_schema__</code></a></li>
+<li><a href="#implementing_get_pydantic_core_schema">Implementing <code>__get_pydantic_core_schema__</code></a></li>
+<li><a href="#implementing_get_pydantic_json_schema">Implementing <code>__get_pydantic_json_schema__</code></a></li>
 </ol>
 <h3 id="field-level-customization">Field-Level Customization<a class="headerlink" href="#field-level-customization" title="Permanent link">&para;</a></h3>
 <p>Optionally, the <a class="autorefs autorefs-internal" href="../../api/fields/#pydantic.fields.Field"><code>Field</code></a> function can be used to provide extra information about the field
@@ -3827,6 +3865,7 @@ and validations.</p>
 <li><code>description</code>: The description of the field.</li>
 <li><code>examples</code>: The examples of the field.</li>
 <li><code>json_schema_extra</code>: Extra JSON Schema properties to be added to the field.</li>
+<li><code>field_title_generator</code>: A function that programmatically sets the field's title, based on its name and info.</li>
 </ul>
 <p>Here's an example:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
@@ -3932,7 +3971,7 @@ to <a class="autorefs autorefs-internal" href="../../api/fields/#pydantic.fields
 <span class="sd">}</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div>
-<p>You can specify JSON schema modifications via the <a class="autorefs autorefs-internal" href="../../api/fields/#pydantic.fields.Field"><code>Field</code></a> constructor via <code>typing.Annotated</code> as well:</p>
+<p>You can specify JSON schema modifications via the <a class="autorefs autorefs-internal" href="../../api/fields/#pydantic.fields.Field"><code>Field</code></a> constructor via <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Annotated"><code>typing.Annotated</code></a> as well:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">uuid</span> <span class="kn">import</span> <span class="n">uuid4</span>
 
@@ -3968,14 +4007,55 @@ to <a class="autorefs autorefs-internal" href="../../api/fields/#pydantic.fields
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="programmatic-field-title-generation">Programmatic field title generation<a class="headerlink" href="#programmatic-field-title-generation" title="Permanent link">&para;</a></h3>
+<p>The <code>field_title_generator</code> parameter can be used to programmatically generate the title for a field based on its name and info.</p>
+<p>See the following example:</p>
+<div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+<span class="kn">from</span> <span class="nn">pydantic.fields</span> <span class="kn">import</span> <span class="n">FieldInfo</span>
+
+
+<span class="k">def</span> <span class="nf">make_title</span><span class="p">(</span><span class="n">field_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">field_info</span><span class="p">:</span> <span class="n">FieldInfo</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">field_name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">field_title_generator</span><span class="o">=</span><span class="n">make_title</span><span class="p">)</span>
+    <span class="n">age</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">field_title_generator</span><span class="o">=</span><span class="n">make_title</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">Person</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">{</span>
+<span class="sd">  &quot;properties&quot;: {</span>
+<span class="sd">    &quot;name&quot;: {</span>
+<span class="sd">      &quot;title&quot;: &quot;NAME&quot;,</span>
+<span class="sd">      &quot;type&quot;: &quot;string&quot;</span>
+<span class="sd">    },</span>
+<span class="sd">    &quot;age&quot;: {</span>
+<span class="sd">      &quot;title&quot;: &quot;AGE&quot;,</span>
+<span class="sd">      &quot;type&quot;: &quot;integer&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">  },</span>
+<span class="sd">  &quot;required&quot;: [</span>
+<span class="sd">    &quot;name&quot;,</span>
+<span class="sd">    &quot;age&quot;</span>
+<span class="sd">  ],</span>
+<span class="sd">  &quot;title&quot;: &quot;Person&quot;,</span>
+<span class="sd">  &quot;type&quot;: &quot;object&quot;</span>
+<span class="sd">}</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
 <h3 id="model-level-customization">Model-Level Customization<a class="headerlink" href="#model-level-customization" title="Permanent link">&para;</a></h3>
 <p>You can also use <a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict">model config</a> to customize JSON schema generation on a model.
 Specifically, the following config options are relevant:</p>
 <ul>
 <li><a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict.title"><code>title</code></a></li>
 <li><a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict.json_schema_extra"><code>json_schema_extra</code></a></li>
-<li><a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict.schema_generator"><code>schema_generator</code></a></li>
 <li><a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict.json_schema_mode_override"><code>json_schema_mode_override</code></a></li>
+<li><a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict.field_title_generator"><code>field_title_generator</code></a></li>
+<li><a class="autorefs autorefs-internal" href="../../api/config/#pydantic.config.ConfigDict.model_title_generator"><code>model_title_generator</code></a></li>
 </ul>
 <h3 id="using-json_schema_extra">Using <code>json_schema_extra</code><a class="headerlink" href="#using-json_schema_extra" title="Permanent link">&para;</a></h3>
 <p>The <code>json_schema_extra</code> option can be used to add extra information to the JSON schema, either at the
@@ -4045,6 +4125,69 @@ You can pass a <code>dict</code> or a <code>Callable</code> to <code>json_schema
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
+<h4 id="merging-json_schema_extra">Merging <code>json_schema_extra</code><a class="headerlink" href="#merging-json_schema_extra" title="Permanent link">&para;</a></h4>
+<p>Starting in v2.9, Pydantic merges <code>json_schema_extra</code> dictionaries from annotated types.
+This pattern offers a more additive approach to merging rather than the previous override behavior.
+This can be quite helpful for cases of reusing json schema extra information across multiple types.</p>
+<p>We viewed this change largely as a bug fix, as it resolves unintentional differences in the <code>json_schema_extra</code> merging behavior
+between <code>BaseModel</code> and <code>TypeAdapter</code> instances - see <a href="https://github.com/pydantic/pydantic/issues/9210">this issue</a>
+for more details.</p>
+<div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Annotated</span><span class="p">,</span> <span class="n">TypeAlias</span>
+
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">Field</span><span class="p">,</span> <span class="n">TypeAdapter</span>
+
+<span class="n">ExternalType</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">Annotated</span><span class="p">[</span>
+    <span class="nb">int</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">json_schema_extra</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;key1&#39;</span><span class="p">:</span> <span class="s1">&#39;value1&#39;</span><span class="p">})</span>
+<span class="p">]</span>
+
+<span class="n">ta</span> <span class="o">=</span> <span class="n">TypeAdapter</span><span class="p">(</span>
+    <span class="n">Annotated</span><span class="p">[</span><span class="n">ExternalType</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">json_schema_extra</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="s1">&#39;value2&#39;</span><span class="p">})]</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">ta</span><span class="o">.</span><span class="n">json_schema</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">{</span>
+<span class="sd">  &quot;key1&quot;: &quot;value1&quot;,</span>
+<span class="sd">  &quot;key2&quot;: &quot;value2&quot;,</span>
+<span class="sd">  &quot;type&quot;: &quot;integer&quot;</span>
+<span class="sd">}</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<p>If you would prefer for the last of your <code>json_schema_extra</code> specifications to override the previous ones,
+you can use a <code>callable</code> to make more significant changes, including adding or removing keys, or modifying values.
+You can use this pattern if you'd like to mimic the behavior of the <code>json_schema_extra</code> overrides present
+in Pydantic v2.8 and earlier:</p>
+<div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Annotated</span><span class="p">,</span> <span class="n">TypeAlias</span>
+
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">Field</span><span class="p">,</span> <span class="n">TypeAdapter</span>
+<span class="kn">from</span> <span class="nn">pydantic.json_schema</span> <span class="kn">import</span> <span class="n">JsonDict</span>
+
+<span class="n">ExternalType</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">Annotated</span><span class="p">[</span>
+    <span class="nb">int</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">json_schema_extra</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;key1&#39;</span><span class="p">:</span> <span class="s1">&#39;value1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="s1">&#39;value2&#39;</span><span class="p">})</span>
+<span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">finalize_schema</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">JsonDict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;key1&#39;</span><span class="p">)</span>
+    <span class="n">s</span><span class="p">[</span><span class="s1">&#39;key2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="s1">&#39;key2&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;-final&#39;</span>
+    <span class="n">s</span><span class="p">[</span><span class="s1">&#39;key3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;value3-final&#39;</span>
+
+
+<span class="n">ta</span> <span class="o">=</span> <span class="n">TypeAdapter</span><span class="p">(</span>
+    <span class="n">Annotated</span><span class="p">[</span><span class="n">ExternalType</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">json_schema_extra</span><span class="o">=</span><span class="n">finalize_schema</span><span class="p">)]</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">ta</span><span class="o">.</span><span class="n">json_schema</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">{</span>
+<span class="sd">  &quot;key2&quot;: &quot;value2-final&quot;,</span>
+<span class="sd">  &quot;key3&quot;: &quot;value3-final&quot;,</span>
+<span class="sd">  &quot;type&quot;: &quot;integer&quot;</span>
+<span class="sd">}</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
 <h3 id="withjsonschema-annotation"><code>WithJsonSchema</code> annotation<a class="headerlink" href="#withjsonschema-annotation" title="Permanent link">&para;</a></h3>
 <details class="api">
 <summary>API Documentation</summary>
@@ -4053,7 +4196,7 @@ You can pass a <code>dict</code> or a <code>Callable</code> to <code>json_schema
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Using <a class="autorefs autorefs-internal" href="../../api/json_schema/#pydantic.json_schema.WithJsonSchema"><code>WithJsonSchema</code></a>] is preferred over
-<a href="#implementing-getpydanticjsonschema">implementing <code>__get_pydantic_json_schema__</code></a> for custom types,
+<a href="#implementing_get_pydantic_json_schema">implementing <code>__get_pydantic_json_schema__</code></a> for custom types,
 as it's more simple and less error-prone.</p>
 </div>
 <p>The <a class="autorefs autorefs-internal" href="../../api/json_schema/#pydantic.json_schema.WithJsonSchema"><code>WithJsonSchema</code></a> annotation can be used to override the generated (base)
@@ -4120,7 +4263,7 @@ but the <a class="autorefs autorefs-internal" href="../../api/json_schema/#pydan
 </details>
 <p>The <a class="autorefs autorefs-internal" href="../../api/json_schema/#pydantic.json_schema.SkipJsonSchema"><code>SkipJsonSchema</code></a> annotation can be used to skip a including field (or part of a field's specifications)
 from the generated JSON schema. See the API docs for more details.</p>
-<h3 id="implementing-__get_pydantic_core_schema__">Implementing <code>__get_pydantic_core_schema__</code><a class="headerlink" href="#implementing-__get_pydantic_core_schema__" title="Permanent link">&para;</a></h3>
+<h3 id="implementing-__get_pydantic_core_schema__">Implementing <code>__get_pydantic_core_schema__</code> <a name="implementing_get_pydantic_core_schema"></a><a class="headerlink" href="#implementing-__get_pydantic_core_schema__" title="Permanent link">&para;</a></h3>
 <p>Custom types (used as <code>field_name: TheType</code> or <code>field_name: Annotated[TheType, ...]</code>) as well as <code>Annotated</code> metadata
 (used as <code>field_name: Annotated[int, SomeMetadata]</code>)
 can modify or override the generated schema by implementing <code>__get_pydantic_core_schema__</code>.
@@ -4401,14 +4544,14 @@ metadata class:</p>
 <span class="sd">}</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div>
-<h3 id="implementing-__get_pydantic_json_schema__">Implementing <code>__get_pydantic_json_schema__</code><a class="headerlink" href="#implementing-__get_pydantic_json_schema__" title="Permanent link">&para;</a></h3>
+<h3 id="implementing-__get_pydantic_json_schema__">Implementing <code>__get_pydantic_json_schema__</code> <a name="implementing_get_pydantic_json_schema"></a><a class="headerlink" href="#implementing-__get_pydantic_json_schema__" title="Permanent link">&para;</a></h3>
 <p>You can also implement <code>__get_pydantic_json_schema__</code> to modify or override the generated json schema.
 Modifying this method only affects the JSON schema - it doesn't affect the core schema, which is used for validation and serialization.</p>
 <p>Here's an example of modifying the generated JSON schema:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span>
 
-<span class="kn">from</span> <span class="nn">pydantic_core</span> <span class="kn">import</span> <span class="n">core_schema</span>
+<span class="kn">from</span> <span class="nn">pydantic_core</span> <span class="kn">import</span> <span class="n">core_schema</span> <span class="k">as</span> <span class="n">cs</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">GetCoreSchemaHandler</span><span class="p">,</span> <span class="n">GetJsonSchemaHandler</span><span class="p">,</span> <span class="n">TypeAdapter</span>
 <span class="kn">from</span> <span class="nn">pydantic.json_schema</span> <span class="kn">import</span> <span class="n">JsonSchemaValue</span>
@@ -4425,17 +4568,17 @@ Modifying this method only affects the JSON schema - it doesn't affect the core 
     <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">__get_pydantic_core_schema__</span><span class="p">(</span>
         <span class="bp">cls</span><span class="p">,</span> <span class="n">source_type</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">handler</span><span class="p">:</span> <span class="n">GetCoreSchemaHandler</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">core_schema</span><span class="o">.</span><span class="n">CoreSchema</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">core_schema</span><span class="o">.</span><span class="n">typed_dict_schema</span><span class="p">(</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">cs</span><span class="o">.</span><span class="n">CoreSchema</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">cs</span><span class="o">.</span><span class="n">typed_dict_schema</span><span class="p">(</span>
             <span class="p">{</span>
-                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">core_schema</span><span class="o">.</span><span class="n">typed_dict_field</span><span class="p">(</span><span class="n">core_schema</span><span class="o">.</span><span class="n">str_schema</span><span class="p">()),</span>
-                <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="n">core_schema</span><span class="o">.</span><span class="n">typed_dict_field</span><span class="p">(</span><span class="n">core_schema</span><span class="o">.</span><span class="n">int_schema</span><span class="p">()),</span>
+                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">typed_dict_field</span><span class="p">(</span><span class="n">cs</span><span class="o">.</span><span class="n">str_schema</span><span class="p">()),</span>
+                <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">typed_dict_field</span><span class="p">(</span><span class="n">cs</span><span class="o">.</span><span class="n">int_schema</span><span class="p">()),</span>
             <span class="p">},</span>
         <span class="p">)</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">__get_pydantic_json_schema__</span><span class="p">(</span>
-        <span class="bp">cls</span><span class="p">,</span> <span class="n">core_schema</span><span class="p">:</span> <span class="n">core_schema</span><span class="o">.</span><span class="n">CoreSchema</span><span class="p">,</span> <span class="n">handler</span><span class="p">:</span> <span class="n">GetJsonSchemaHandler</span>
+        <span class="bp">cls</span><span class="p">,</span> <span class="n">core_schema</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">CoreSchema</span><span class="p">,</span> <span class="n">handler</span><span class="p">:</span> <span class="n">GetJsonSchemaHandler</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">JsonSchemaValue</span><span class="p">:</span>
         <span class="n">json_schema</span> <span class="o">=</span> <span class="n">handler</span><span class="p">(</span><span class="n">core_schema</span><span class="p">)</span>
         <span class="n">json_schema</span> <span class="o">=</span> <span class="n">handler</span><span class="o">.</span><span class="n">resolve_ref_schema</span><span class="p">(</span><span class="n">json_schema</span><span class="p">)</span>
@@ -4477,6 +4620,87 @@ Modifying this method only affects the JSON schema - it doesn't affect the core 
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="using-field_title_generator">Using <code>field_title_generator</code><a class="headerlink" href="#using-field_title_generator" title="Permanent link">&para;</a></h3>
+<p>The <code>field_title_generator</code> parameter can be used to programmatically generate the title for a field based on its name and info.
+This is similar to the field level <code>field_title_generator</code>, but the <code>ConfigDict</code> option will be applied to all fields of the class.</p>
+<p>See the following example:</p>
+<div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ConfigDict</span>
+
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span>
+        <span class="n">field_title_generator</span><span class="o">=</span><span class="k">lambda</span> <span class="n">field_name</span><span class="p">,</span> <span class="n">field_info</span><span class="p">:</span> <span class="n">field_name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="p">)</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">age</span><span class="p">:</span> <span class="nb">int</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">Person</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">{</span>
+<span class="sd">  &quot;properties&quot;: {</span>
+<span class="sd">    &quot;name&quot;: {</span>
+<span class="sd">      &quot;title&quot;: &quot;NAME&quot;,</span>
+<span class="sd">      &quot;type&quot;: &quot;string&quot;</span>
+<span class="sd">    },</span>
+<span class="sd">    &quot;age&quot;: {</span>
+<span class="sd">      &quot;title&quot;: &quot;AGE&quot;,</span>
+<span class="sd">      &quot;type&quot;: &quot;integer&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">  },</span>
+<span class="sd">  &quot;required&quot;: [</span>
+<span class="sd">    &quot;name&quot;,</span>
+<span class="sd">    &quot;age&quot;</span>
+<span class="sd">  ],</span>
+<span class="sd">  &quot;title&quot;: &quot;Person&quot;,</span>
+<span class="sd">  &quot;type&quot;: &quot;object&quot;</span>
+<span class="sd">}</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<h3 id="using-model_title_generator">Using <code>model_title_generator</code><a class="headerlink" href="#using-model_title_generator" title="Permanent link">&para;</a></h3>
+<p>The <code>model_title_generator</code> config option is similar to the <code>field_title_generator</code> option, but it applies to the title of the model itself,
+and accepts the model class as input.</p>
+<p>See the following example:</p>
+<div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Type</span>
+
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ConfigDict</span>
+
+
+<span class="k">def</span> <span class="nf">make_title</span><span class="p">(</span><span class="n">model</span><span class="p">:</span> <span class="n">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Title-</span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s1">&#39;</span>
+
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">model_title_generator</span><span class="o">=</span><span class="n">make_title</span><span class="p">)</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">age</span><span class="p">:</span> <span class="nb">int</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">Person</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">{</span>
+<span class="sd">  &quot;properties&quot;: {</span>
+<span class="sd">    &quot;name&quot;: {</span>
+<span class="sd">      &quot;title&quot;: &quot;Name&quot;,</span>
+<span class="sd">      &quot;type&quot;: &quot;string&quot;</span>
+<span class="sd">    },</span>
+<span class="sd">    &quot;age&quot;: {</span>
+<span class="sd">      &quot;title&quot;: &quot;Age&quot;,</span>
+<span class="sd">      &quot;type&quot;: &quot;integer&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">  },</span>
+<span class="sd">  &quot;required&quot;: [</span>
+<span class="sd">    &quot;name&quot;,</span>
+<span class="sd">    &quot;age&quot;</span>
+<span class="sd">  ],</span>
+<span class="sd">  &quot;title&quot;: &quot;Title-Person&quot;,</span>
+<span class="sd">  &quot;type&quot;: &quot;object&quot;</span>
+<span class="sd">}</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
 <h2 id="json-schema-types">JSON schema types<a class="headerlink" href="#json-schema-types" title="Permanent link">&para;</a></h2>
 <p>Types, custom field types, and constraints (like <code>max_length</code>) are mapped to the corresponding spec formats in the
 following priority order (when there is an equivalent available):</p>
@@ -4487,6 +4711,7 @@ following priority order (when there is an equivalent available):</p>
 <li>The standard <code>format</code> JSON field is used to define Pydantic extensions for more complex <code>string</code> sub-types.</li>
 </ol>
 <p>The field schema mapping from Python or Pydantic to JSON schema is done as follows:</p>
+<p>{{ schema_mappings_table }}</p>
 <h2 id="top-level-schema-generation">Top-level schema generation<a class="headerlink" href="#top-level-schema-generation" title="Permanent link">&para;</a></h2>
 <p>You can also generate a top-level JSON schema that only includes a list of models and related
 sub-models in its <code>$defs</code>:</p>
@@ -4637,7 +4862,7 @@ subclasses to modify the "global" approach to generating JSON schema.</p>
 </code></pre></div>
 <h2 id="customizing-the-refs-in-json-schema">Customizing the <code>$ref</code>s in JSON Schema<a class="headerlink" href="#customizing-the-refs-in-json-schema" title="Permanent link">&para;</a></h2>
 <p>The format of <code>$ref</code>s can be altered by calling <a class="autorefs autorefs-internal" href="../../api/base_model/#pydantic.BaseModel.model_json_schema"><code>model_json_schema()</code></a>
-or <code>model_dump_json()</code>][pydantic.main.BaseModel.model_dump_json] with the <code>ref_template</code> keyword argument.
+or <a class="autorefs autorefs-internal" href="../../api/base_model/#pydantic.BaseModel.model_dump_json"><code>model_dump_json()</code></a> with the <code>ref_template</code> keyword argument.
 The definitions are always stored under the key <code>$defs</code>, but a specified prefix can be used for the references.</p>
 <p>This is useful if you need to extend or modify the JSON schema default definitions location. For example, with OpenAPI:</p>
 <div class="language-py highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
@@ -4712,20 +4937,77 @@ The definitions are always stored under the key <code>$defs</code>, but a specif
 
 
 
+
+  
+  
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
                 
   <script src="/flarelytics/client.js"></script>
       <script>
-    window.mkdocs_run_deps = ["pydantic==2.6.0", "pydantic-core==2.16.1"]
+    window.mkdocs_run_deps = ["pydantic==2.10.0a1", "pydantic-core==2.24.0", "pydantic-extra-types==2.9.0"]
     </script>
 
               </article>
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -4738,7 +5020,7 @@ The definitions are always stored under the key <code>$defs</code>, but a specif
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs Insiders
+      Material for MkDocs
     </a>
   
 </div>
@@ -4752,10 +5034,15 @@ The definitions are always stored under the key <code>$defs</code>, but a specif
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "announce.dismiss", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.f2da59ea.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-      <script src="../../assets/javascripts/bundle.65061dd4.min.js"></script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "announce.dismiss", "navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../extra/feedback.js"></script>
       
         <script src="../../extra/fluff.js"></script>
       
